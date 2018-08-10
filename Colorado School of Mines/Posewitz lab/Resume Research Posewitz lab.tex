@@ -1,0 +1,236 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{graphicx}
+\usepackage{float}
+%\usepackage{caption}
+\usepackage{fancyhdr}
+ \usepackage{setspace}
+\usepackage{verbatim}
+\usepackage[scale=0.825, top = 1.75cm, bottom = 2.6cm]{geometry}
+%\usepackage{comment}
+%\usepackage{apacite}
+%\usepackage{multibib}
+%\usepackage[style=numeric,sorting=none,backend=bibtex]{biblatex}
+
+
+%\documentclass[11pt]{report}  
+\usepackage{geometry}  
+\usepackage{amsmath}  
+\usepackage{acronym}  
+\usepackage{times}  
+\usepackage{epstopdf}  
+\usepackage{amssymb}  
+\usepackage{mathrsfs}  
+\usepackage{latexsym}  
+\usepackage{wrapfig}  
+\usepackage[font={footnotesize,it}]{caption}  
+\usepackage{url}  
+\usepackage{float}    
+%\usepackage{titling}    
+%\renewcommand{\thechapter}{\Roman{chapter}}  
+%\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}  
+%\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}  
+%\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}  
+%\usepackage{hyperref}  
+
+%\usepackage{graphics}  
+%\usepackage[pdftex]{graphicx}  
+%\usepackage{siunitx}  
+\usepackage{booktabs}  
+\usepackage{microtype}  
+%\usepackage{subfigure}  
+\usepackage[english]{babel}\addto\captionsenglish  
+{\renewcommand{\bibname}{References}}  
+\usepackage[backend=bibtex,style=numeric, sorting = ydnt]{biblatex}  %backend=biber is 'better'  
+\usepackage{multirow}  
+\usepackage{textcomp}  
+\usepackage{csquotes} %Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.  
+\usepackage{listings}  
+\usepackage{babel,blindtext}  
+\usepackage[T1]{fontenc}  
+
+\addbibresource{publications-Rabea.bib}  
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+
+%\newcites{article,book}{{Articles},{Books}}
+
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+\definecolor{dark-gray}{gray}{0.20}
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[R]{\textcolor{gray}{$\sim$ \textbf{Rabea Jesser} $\sim$}}
+\fancypagestyle{titlepage}{
+\fancyhead{}
+\fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
+
+
+
+\AfterPreamble{\usepackage{cleveref}}
+
+% personal data
+\name{Rabea Jesser ---}{ Resume}
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\begin{comment}
+\thispagestyle{titlepage}
+%\renewcommand*{\titlefont}{\fontsize{12}{1}\mdseries\upshape}
+\renewcommand*{\namefont}{\fontsize{17}{2}\mdseries\upshape}
+\renewcommand*{\sectionfont}{\fontsize{13}{8}\mdseries\upshape}
+\renewcommand*{\subsectionfont}{\fontsize{12}{5}\mdseries\upshape}
+\makecvtitle{}
+\vspace*{-13mm}
+
+
+%%%%%%%%%%%%%%%%%% RABEA NOTE %%%%%%%%%%%%%%%%%%%%%%
+THIS HAS NOT BEEN EDITED YET!!!!!
+
+%\begin{changemargin}{.5cm}{.5cm} 
+%\begin{small}
+\begin{spacing}{1.05}
+%\color{dark-gray}{Being higly motivated and inspirable, I am adept at quickly learn new protocols, design and implement reseach projects as a team and independently, balance multiple projects and deadlines and communicate findings with both experts and wider audiences. I have had ample experience in presenting, public speaking and have solid interpersonal skills, meaning I can effectively collaborate with an interdisciplinary group. As a competent researcher I am especially interested in photosynthetically active organisms, their adaptations to environmental clues and how they might put forward a more sustainable economy.}
+\color{dark-gray}{As a detail-oriented molecular biologist, I am excited to study the pathogenesis of lymphoproliferative disorders and help improve the life quality of dogs and cats. In various scientific projects I have gained hands-on experience with cellular and molecular assays and in my current position I timely deal with multiple projects at once and clearly communicate the results to clients. The scientific competition iGEM has prepared me to function effectively within a team and has left me with a strong work ethic and excellent organizational skills. Now I am eager to learn more about flow cytometry and veterinary diagnostics.} 
+\end{spacing}
+%\end{small}
+%\end{changemargin}
+\vspace{1mm}
+\section{Vocational Experience}
+%\begin{small}
+\cvitem{2017--present}{\emph{European Molecular Biology Laboratory (EMBL)}, Monterotondo, Italy}
+%\vspace*{1mm}
+\cvitem{Job Title}{\textbf{Technical Officer}, Genetic and Viral Engineering Facility}
+%\vspace*{1mm}
+\cvitem{Achievements}{Provided high-quality genetic constructs and viral vector tools; established new protocols and methods;  performed all general laboratory duties (manage lab supply, equipment and instruments, prepare stock solutions and media); improved database; managed sample data and accurately reported results to clients.}
+%\vspace*{2mm}
+%\end{small}
+\section{Research Experience}
+\subsection{M.Sc. Thesis, Genetics \& Experimental Bioinformatics}
+%\begin{small}
+\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29517395}{\textcolor{blue}{\textit{(Publication)}}}}}
+%\cvitem{Topic}{\emph{Effect of specific point mutations on the Cas6-1 protein of Synechocystis sp. PCC 6803}}
+%\vspace*{1mm}
+%\vspace*{1mm}
+\cvitem{Achievements}{Managed own research project; successfully worked with cyanobacteria and RNA.}
+%\vspace*{1mm}
+%\end{small}
+%\newpage
+\subsection{iGem 2015 Competition }
+\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of in vitro expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{(Publication)}}}}{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{(Team Website)}}}}}
+%\vspace*{2mm}
+%\vspace*{1mm}
+\cvitem{Achievements}{Produced high-quality outcome as part of a team; accurately recorded and communicated results comprehensively for all team members as well as to a broad audience; successfully managed lab as a team.}
+\cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
+%\vspace*{2mm}
+%\subsection{B.Sc. Thesis, Cell Biology}
+%\begin{small}
+%\cvitem{Topic}{\emph{Nannochloropsis oceanica (N.o.) as an expression system for recombinant proteins and studies on protein transport across the periplastidal membrane of Phaeodactylum tricornutum (P.t.).}}
+%\vspace*{1mm}
+%\cvitem{Skils Developed}{Literature research; clone DNA constructs; handling algal cells and proteins.}
+\section{Education}
+
+%\begin{small}
+\cventry{2014--2016}{M.Sc. Biology}{\href{http://www.cyanolab.de/index.php}{\textcolor{blue}{Albert-Ludwigs-Universit\"at Freiburg}}}{Germany}{\textit{GPA 4.0}}{}% arguments 3 to 6 can be left empty {6} = Description
+%\vspace*{2mm}
+\cventry{2011--2014}{B.Sc. Biology}{\href{https://www.uni-marburg.de/fb17/fachgebiete/zellbio/zellbioi?language_sync=1}{\textcolor{blue}{Philipps-Universit\"at Marburg}}}{Germany}{\textit{GPA 4.0}}{}
+
+
+%\pagestyle{fancy}
+\section{Languages}
+%\begin{spacing}{1}
+%\begin{small}
+\cvitemwithcomment{German}{Native Speaker}{}
+\cvitemwithcomment{English}{C1}{full working proficiency in speaking, reading and writing}
+\cvitemwithcomment{Other}{Spanish, Italian, Portuguese}{basic proficiency}
+%\cvitemwithcomment{Microsoft}{Excel, Word, PowerPoint \begin{flushright} [very proficient in all 3]\end{flushright}}{}
+
+\section{Computer Skills}
+\cvitemwithcomment{Office Tools}{Microsoft Excel, Word, PowerPoint; Adobe Illustrator}{very proficient in all 4}
+\cvitemwithcomment{Other}{FileMaker database, Geneious, SnapGene}{basic working proficiency}{}
+%\cvitemwithcomment{Tools}{}{very proficient in both}{}
+%\end{small}
+%\vspace*{2.5mm}
+%\section{General Skills}
+%\begin{small}
+%\cvlistdoubleitem{Able to multi-tastk}{Good time management}
+%\cvlistdoubleitem{Higly accurate data documentation}{Good in team-roles}
+%\cvlistdoubleitem{Adapt well to new environments}{Reliable and punctual}
+
+%\section{Interests}
+%\vspace*{1mm}
+%\cvitem{}{Gardening, climbing, hiking, camping, beekeeping}
+
+%\section{Volunteering}
+%\cvitem{}{Organize trips for teens and weekly daycare for children through church; tutor at international school in Malawi; help international students at German University.}
+
+%\nocite{Article3,Article2,Article1}
+%\printbibliography[title={Publications}]
+
+\begin{comment}
+%\thispagestyle{titlepage}
+\newpage
+\section{References}
+%\begin{spacing}{1}
+%\vspace*{1mm}
+%\cvitem{}{\textbf{References are available on request.}}
+\cvitem{EMBL}{\textbf{Dr. James Sawitzke:} \emph{Head of Genetic and Viral Engineering Facility, EMBL Rome --- Italy} \emailsymbol \href{mailto:james.sawitzke@embl.it}{james.sawitzke@embl.it} \thinspace \phonesymbol +39 06 90091 268 \thinspace \homepagesymbol\textcolor{blue}{\url{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}}}
+\cvitem{M.Sc. Thesis}{\textbf{Dr. Wolfgang Hess:} \emph{Professor for Genetics \& Experimental Bioinformatics, University Freiburg  --- Germany} \emailsymbol \href{mailto:wolfgang.hess@biologie.uni-freiburg.de}{wolfgang.hess@biologie.uni-freiburg.de} \thinspace \phonesymbol +49 761 203-2796 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.cyanolab.de/}}}
+%\vspace{2mm}
+\cvitem{iGem}{\textbf{Dr. Maximilian Ulbrich:} \emph{Group leader at Centre for Biological Signalling Studies (BIOSS), University Freiburg --- Germany} \emailsymbol \href{mailtp:max.ulbrich@bioss.uni-freiburg.de}{ max.ulbrich@bioss.uni-freiburg.de} \thinspace \phonesymbol +49 761 203 97183 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.ulbrich-lab.com/}}}
+%\vspace{2mm}
+\cvitem{iGem}{\textbf{Dr. Nicole Gensch:} \emph{Laboratory manager of the Toolbox, BIOSS, University Freiburg --- Germany} \emailsymbol nicole.gensch@bioss.uni-freiburg.de \thinspace \phonesymbol +49 761 203 97225  \thinspace \homepagesymbol \textcolor{blue}{\url{http://www.bioss.uni-freiburg.de/de/toolbox/toolbox-home/}}}
+
+\end{comment}
+%\end{spacing}
+%\end{comment}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
