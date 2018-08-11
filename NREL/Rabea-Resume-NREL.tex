@@ -1,60 +1,25 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%%%%%%%%%%%%%%%%%%%%%%%%% 		CHECKLIST		%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% 		Did you:
+%				1) Check for the correct date?
+%				2) Check that the recipeient's name and address were correct?
+%				3) Copy into Word for spelling errors?
+%				4) Use a word counter online to check for overused language?
 
 
-\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-\usepackage{graphicx}
-\usepackage{float}
-%\usepackage{caption}
-\usepackage{fancyhdr}
- \usepackage{setspace}
-\usepackage{verbatim}
+%%%%%%%%%%%%%%%%%%%%%		 DOCUMENT CLASS, PACKAGES, COMMANDS, SOURCING 		%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,sans]{moderncv}
+\usepackage{graphicx, fancyhdr, setspace, verbatim, amsmath, acronym, times, epstopdf, amssymb, mathrsfs, latexsym, wrapfig, url, float, booktabs, microtype, multirow, textcomp, listings, blindtext}
 \usepackage[scale=0.825, top = 1.75cm, bottom = 2.6cm]{geometry}
-%\usepackage{comment}
-%\usepackage{apacite}
-%\usepackage{multibib}
-%\usepackage[style=numeric,sorting=none,backend=bibtex]{biblatex}
-
-
-%\documentclass[11pt]{report}  
-\usepackage{geometry}  
-\usepackage{amsmath}  
-\usepackage{acronym}  
-\usepackage{times}  
-\usepackage{epstopdf}  
-\usepackage{amssymb}  
-\usepackage{mathrsfs}  
-\usepackage{latexsym}  
-\usepackage{wrapfig}  
 \usepackage[font={footnotesize,it}]{caption}  
-\usepackage{url}  
-\usepackage{float}    
-%\usepackage{titling}    
-%\renewcommand{\thechapter}{\Roman{chapter}}  
-%\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}  
-%\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}  
-%\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}  
-%\usepackage{hyperref}  
-
-%\usepackage{graphics}  
-%\usepackage[pdftex]{graphicx}  
-%\usepackage{siunitx}  
-\usepackage{booktabs}  
-\usepackage{microtype}  
-%\usepackage{subfigure}  
 \usepackage[english]{babel}\addto\captionsenglish  
 {\renewcommand{\bibname}{References}}  
 \usepackage[backend=bibtex,style=numeric, sorting = ydnt]{biblatex}  %backend=biber is 'better'  
-\usepackage{multirow}  
-\usepackage{textcomp}  
 \usepackage{csquotes} %Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.  
-\usepackage{listings}  
-\usepackage{babel,blindtext}  
 \usepackage[T1]{fontenc}  
+
+\AfterPreamble{\usepackage{cleveref}} %\afterpreamble makes sure packages is only loaded after it does all the document class stuff, there is some sort of package conflict that makes this necessary
 
 \addbibresource{publications-Rabea.bib}  
 
@@ -73,16 +38,40 @@
   {\item}
 
 
-%\newcites{article,book}{{Articles},{Books}}
+\definecolor{dark-gray}{gray}{0.20}
 
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+% Try to create `triple' list
+\newlength\Tripleitemmaincolumnwidth
+\newlength\tripleitemmaincolumnwidth
+
+\AtBeginDocument{%
+\setlength\tripleitemmaincolumnwidth{% 
+  \maincolumnwidth-2\hintscolumnwidth-2\separatorcolumnwidth}%
+\setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%   
+  }
+
+\newcommand*{\cvtripleitem}[7][.25em]{%
+ \cvitem[#1]{#2}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#3\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#5\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#6}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#7\end{minipage}%
+   }%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% 		FOOTER, HEADER, MODERNCV INPUTS		 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\moderncvstyle{casual}                             
+\moderncvcolor{blue}                              
+\nopagenumbers{}                          
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
-\definecolor{dark-gray}{gray}{0.20}
 
 
 \pagestyle{fancy}
@@ -93,102 +82,134 @@
 \fancyhead{}
 \fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
 
-
-
-\AfterPreamble{\usepackage{cleveref}}
-
-% personal data
 \name{Rabea Jesser ---}{ CV}
+
+
+%%%%%%%%%%%%%%%% 			THOMAS GENERAL NOTES 			%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Thomas: Do you want your address stuff to be at the bottom of every page or just the first one?
+%
+% Thomas: In the 2 publication, the last piece is `Contributor' . . . I would remove that?
+%
+% Thomas: Did you have a B.Sc. thesis? Maybe include that?
+%
+% Thomas: I think the summary paragraph in the beginning is equivalent to a combo of the first and last paragraph in the cover letter: 1) This is why you want me + This is why I want you (in that order of importance). 
+%			I changed yours, let me know what you think.
+%
+% Thomas: I think a good goal for the summary paragraph is 4-5 easily digestible (readable) sentences. Notice I split it up roughly as: 1) I know what you're working on and here's roughly why I could help; 2) Here are some hard skills I have that you would 
+%			find useful; 3) Here are some soft skills I could use anywhere that you would find useful; 4) I am really passionate about what you do and bring a great attitude and work ethic (essentially, I have the microbiologist background, the more general 
+%			research/lab background and the even more general good worker background; 5) You all are my dream job, please please please take me (hysterical sobbing)! 
+%
+% Thomas: As you will immediately see, the summary paragraph is now too long, we'll begin cutting together
+%
+
+
+%%%%%%%%%%%%%%%%			RABEA GENERAL NOTES				%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Rabea: You think I should include volunteering? Like the ecoparticipation thing? I haven't done anything with them yet because they're on summer break and only start again next year, or the gardening club...
+%		Thomas: I think you might want to have a volunteering section, it helps show you're well rounded. Just don't let it take up too much space and again focus on accomplishments? We'll see what my mom thinks.
+		
+% Rabea: Then this is for the recruiter so I would limit it to one page no? Maybe for the group leaders I could increase a bit, to be more specific about my research experience?
+%		Thomas: The people I listened to essentially said even if the recruiters did not 100% understand what you would ahve in your CV they knew roughly what the PI's were looking for. I would send (almost) the same CV to the recruiter as to the PI's.
+%				 Where I would differentiate is between the PI's (like if you thought the algal guy would be more interested in your work in algae, devote more space to it in his/her CV
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%		BEGIN DOCUMENT		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-%\begin{comment}
+
 \thispagestyle{titlepage}
-%\renewcommand*{\titlefont}{\fontsize{12}{1}\mdseries\upshape}
+
 \renewcommand*{\namefont}{\fontsize{18}{2}\mdseries\upshape}
 \renewcommand*{\sectionfont}{\fontsize{16}{8}\mdseries\upshape}
 \renewcommand*{\subsectionfont}{\fontsize{14}{5}\mdseries\upshape}
-\makecvtitle{}
-\vspace*{-13mm}
 
+\makecvtitle{}\vspace*{-13mm}
 
-%%%%%%%%%%%%%%%%%% RABEA NOTE %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%You think I should include volunteering? Like the ecoparticipation thing? I haven't done anything with them yet because they're on summer break and only start again next year, or the gardening club...
-%%%%%Then this is for the recruiter so I would limit it to one page no? Maybe for the group leaders I could increase a bit, to be more specific about my research experience?
-%%%%%%%%%
+% SUMMARY PARAGRAPH
 
-%\begin{changemargin}{.5cm}{.5cm} 
-%\begin{small}
 \begin{spacing}{1.2}
-%\color{dark-gray}{Being higly motivated and inspirable, I am adept at quickly learn new protocols, design and implement reseach projects as a team and independently, balance multiple projects and deadlines and communicate findings with both experts and wider audiences. I have had ample experience in presenting, public speaking and have solid interpersonal skills, meaning I can effectively collaborate with an interdisciplinary group. As a competent researcher I am especially interested in photosynthetically active organisms, their adaptations to environmental clues and how they might put forward a more sustainable economy.}
-\color{dark-gray}{If photosynthetic organisms will pave the way for a sustainable future, I want to be part of the team unravelling that. It seems like the researchers at the National Bioenergy Center would be the best partners in that---and that's just one of the reasons why I'd be a good fit for the NBC team.
-I bring hands-on laboratory experience and work with precise attention to detail, e.g. in my current position I plan and timely process multiple experimental projects at once, while establishing, evaluating and improving working protocols and constantly ensuring a functional and well-equipped laboratory. 
-The scientific competition iGEM has prepared me to function efficiently within a team and has left me not only with a strong work ethic and analytical skills but also with a thirst for knowledge.}
+\color{dark-gray}{
+% If photosynthetic organisms will pave the way for a sustainable future, I want to be part of the team unravelling that. 
+% Thomas: I did not like this sentence, for multiple reasons but mainly because I don't think it would grab their attention
+Photosynthetic organisms will play a vital role in transitioning towards a sustainable economy and as a dedicated, experienced researcher with a strong practical and theoretical background, I am well equipped to help make them a reality. % 
+% Thomas: Not the best, but we'll see what others think/mull it over
+% It seems like the researchers at the National Bioenergy Center would be the best partners in that---and that's just one of the reasons why I'd be a good fit for the NBC team.
+% Thomas: This sentence is also not very . . . aggressive plus I don't follow your logic: ``You all are really good at what you do, therefore you should hire me'' 
+% 			(I know this is an unfair caricature of what you wrote, but I think it would be better to say: ``These are all the reasons I'm great, you all are great [no `seems'], we should work together to save the world!
+% I bring hands-on laboratory experience and work with precise attention to detail, e.g. in my current position I plan and timely process multiple experimental projects at once, while establishing, evaluating and improving working protocols and constantly ensuring a functional and well-equipped laboratory. 
+% Thomas: Here (along with your next sentence) is probably the best part of this intro, but I would shy away from getting too specific here. Use the space to cover your skills/accomplishments in very broad strokes and then list them very detailed below. 
+%		     You can then use your cover letter to build a narrative that helps link the two together. So you could say I am really good at X (where x is something more specific than ``time-management'' but not quite ``In my current job I did ___; 
+%               maybe something like a specific technique (assays?)), and below you list all the times you did X and in the cover letter you write ``While working on my thesis I honed my ability in ``assays'', a skill I further improved while at EMBL and one which I                         %		     could employ successfully at NREL (or something along those lines)
+During my theses and time in Europe's flagship microbiology laboratory (EMBL) I have honed my skills in (\emph{\textbf{Here is where you mention a few specific skills you have like `cyromicrotomy' or `agar diffusion tests'}}) and can effectively employ them and analyze their results. %
+% Thomas: Again, not the best sentence, but I think that after some polishing it will be much better than what was originally here. Mainly need to work on inter-sentence flow
+% The scientific competition iGEM has prepared me to function efficiently within a team and has left me not only with a strong work ethic and analytical skills but also with a thirst for knowledge.
+Through these experiences and my time competing in iGEM, I have likewise developed strong time-management and organizational skills, an ability to function both independently and as part of an interdisciplinary team, excellent attention to detail and the communication skills necessary to convey findings to both experts and colleagues as well as more general audiences. %
+% Thomas: We should work on getting these down to a few soft skills you think they might want to hear about. We should also be careful about talking about things you never mention again. This is just the intor for what you explain later below and in your cover 				letter
+% Thomas: might also want to squeeze in your computer skills? Dunno.
+My education and research background combined with a strong work ethic and passion for bioenergy make me an excellent candidate for the National Bioenergy Center and I believe working on your cutting edge research would bring me closer to my goals of making bioenergy a reliable and affordable alternative to fossil fuels.
+}
 
-%\end{small}
-%\end{changemargin}
+% VOCATIONAL EXPERIENCE
+
 \vspace{1mm}
 \section{Vocational Experience}
-%\begin{small}
 \cvitem{2017--present}{\emph{European Molecular Biology Laboratory (EMBL)}, Monterotondo, Italy}
-%\vspace*{1mm}
 \cvitem{Job Title}{\textbf{Technical Officer}, Genetic and Viral Engineering Facility}
-%\vspace*{1mm}
-\cvitem{Achievements}{
+\cvitem{Achievements}{ % I would try to make these more specific if you can, like the ones for your M.Sc.
 \begin{itemize}  
-\item Produce high-quality genetic constructs and viral vector tools 
-\item Establish and improve new protocols and methods 
-\item Automize calculations for experimental procedures
-\item Improve database and accurately manage sample data
-\item Keep laboratory running smoothly (monitor lab supply, equipment and instruments, prepare stock solutions and media)
+		\item Produce high-quality genetic constructs and viral vector tools % Any examples?
+		\item Establish and improve new protocols and methods % Any examples?
+		\item Automate calculations for experimental procedures % How did you do this? In python? What were they doing before?
+		\item Improve database and accurately manage sample data % With which program? Filemaker?
+		\item Keep laboratory running smoothly (monitor lab supply, equipment and instruments, prepare stock solutions and media)
 \end{itemize}}
-%\vspace*{2mm}
-%\end{small}
-\section{Research Experience}
-\subsection{M.Sc. Thesis, Genetics \& Experimental Bioinformatics}
-%\begin{small}
-\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29517395}{\textcolor{blue}{\textit{(Publication)}}}}}
-%\cvitem{Topic}{\emph{Effect of specific point mutations on the Cas6-1 protein of Synechocystis sp. PCC 6803}}
-%\vspace*{1mm}
-%\vspace*{1mm}
-\cvitem{Achievements}{
-\begin{itemize}  
-\item Explored the endogenous Synechocystis CRISPR-Cas system for appplication in metabolic engineering
-\item Successfully manipulated cyanobacteria  \textit{in cis} and \textit{in trans}
-\item Analyzed RNA \textit{in vitro} and \textit{in vivo}
-\item Overexpressed and purified proteins \textit{E. coli}
-\item Assembled all necessary genetic constructs in \textit{E. coli}
-\end{itemize}}
-%\vspace*{1mm}
-%\end{small}
-%\newpage
-\subsection{iGem 2015 Competition }
-\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of in vitro expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{(Publication)}}}}{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{(Team Website)}}}}}
-%\vspace*{2mm}
-%\vspace*{1mm}
-\cvitem{Achievements}{
-\begin{itemize}  
-\item Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool 
-\item Collected and analyzed literature to find a commonly agreed on high-impact project
-\item Overexpressed and purified proteins \textit{E. coli}
-\item Successfully managed lab as a team
-\item Designed explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{website}.}}}
-\item Accurately recorded and communicated results comprehensively for all team members as well as to a broad audience
-\item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}.}}}
-\end{itemize}}
-\cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
-%\vspace*{2mm}
-%\subsection{B.Sc. Thesis, Cell Biology}
-%\begin{small}
-%\cvitem{Topic}{\emph{Nannochloropsis oceanica (N.o.) as an expression system for recombinant proteins and studies on protein transport across the periplastidal membrane of Phaeodactylum tricornutum (P.t.).}}
-%\vspace*{1mm}
-%\cvitem{Skils Developed}{Literature research; clone DNA constructs; handling algal cells and proteins.}
-\section{Education}
 
-%\begin{small}
+% RESEARCH EXPERIENCE
+
+\section{Research Experience}
+\subsection{M.Sc. Thesis --- Genetics \& Experimental Bioinformatics}
+\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29517395}{\textcolor{blue}{\textit{(Publication)}}}}}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Explored the endogenous Synechocystis CRISPR-Cas system for appplication in metabolic engineering % great! specific!
+		\item Successfully manipulated cyanobacteria  \textit{in cis} and \textit{in trans} % cool, but what do you mean by manipulate?
+		\item Analyzed RNA \textit{in vitro} and \textit{in vivo} % to what ends? How did you `analyze them?
+		\item Overexpressed and purified proteins \textit{E. coli} % which proteins in E. coli?
+		\item Assembled all necessary genetic constructs in \textit{E. coli} % Here it starts to get vague again, is it possible to give slightly more info, or no?
+\end{itemize}}
+
+% 
+
+\subsection{iGem 2015 Competition }
+\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of in vitro expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}}%{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{(Publication)}}}}{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{(Team Website)}}}}} Moved
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool 
+		\item Collected and analyzed literature to find a commonly agreed on high-impact project
+		\item Overexpressed and purified proteins \textit{E. coli} % Same as above? Accident?
+		\item Successfully managed lab as a team % I would try and add more detail here: interdisciplinary, 20 students, were you the manager?
+		\item Designed explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{website}.}}} % with what program(s)?
+		\item Accurately recorded and communicated results comprehensively for all team members as well as to a broad audience% how did you record it and where/with whom/how did you communicate the results?
+%		\item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}.}}}
+		% Thomas: moved to new cv item
+\end{itemize}}
+\cvitem{Publication \& Website}{
+Bender J. et al., Under Review.{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{Link}}}}. \newline
+{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{Team Website}}}}
+% Thomas: Note sure about this . . . I moved it to make it more predominant (so that they would see it more clearly) but I think your original way was better, feel free to choose either or adapt them
+}
+\cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
+
+% EDUCATION
+
+\section{Education}
 \cventry{2014--2016}{M.Sc. Biology}{\href{http://www.bio.uni-freiburg.de/studies/degree-programs/master-en}{\textcolor{blue}{Albert-Ludwigs-Universit\"at Freiburg}}}{Germany}{\textit{GPA 4.0}}{}
 \vspace*{2mm}
-\cvitem{Specific Interests}{
+%\cvitem{Specific Interests}{
+\cvitem{Focuses}{
 \begin{itemize}  
 \item Microbiology (Genetics and experimental bioinformatics---{\href{http://www.cyanolab.de/index.php}{\textcolor{blue}{\textit{Hess}}}} lab)
 \item Synthetic Biology ({\href{https://www.bioss.uni-freiburg.de/synthetic-biology/intro/}{\textcolor{blue}{\textit{Weber}}}} and {\href{https://www.ceplas.eu/de/forschung/c4-photosynthese-ra-b/prof-dr-matias-zurbriggen/}{\textcolor{blue}{\textit{Zurbriggen}}}} lab)
@@ -197,80 +218,47 @@ The scientific competition iGEM has prepared me to function efficiently within a
 
 \cventry{2011--2014}{B.Sc. Biology}{\href{https://www.uni-marburg.de/fb17/fachgebiete/zellbio/zellbioi?language_sync=1}{\textcolor{blue}{Philipps-Universit\"at Marburg}}}{Germany}{\textit{GPA 4.0}}{}
 \vspace*{2mm}
-\cvitem{Specific Interests}{
+%\cvitem{Specific Interests}{
+\cvitem{Focus}{
 \begin{itemize}  
 \item Algal Cell Biology --- Maier lab
 \end{itemize}}
 
+% LANGUAGES
 
-%\pagestyle{fancy}
 \section{Languages}
-%\begin{spacing}{1}
-%\begin{small}
-\cvitemwithcomment{German}{Native Speaker}{}
-\cvitemwithcomment{English}{C1}{full working proficiency in speaking, reading and writing}
-\cvitemwithcomment{Other}{Spanish, Italian, Portuguese}{basic proficiency}
-%\cvitemwithcomment{Microsoft}{Excel, Word, PowerPoint \begin{flushright} [very proficient in all 3]\end{flushright}}{}
+% Thomas: Thought it would be better to condense this to save space (I don't think they care that you are semi-fluent in Portuguese, fucking American scum!
+%	Thomas': Which of the below do you like more?
+%\cvlistdoubleitem{English- \emph{fluent}}{German- \emph{native}}
+\cvtripleitem{German}{Native}{English}{Fluent}{Italian}{Fluent}
+
+
+% COMPUTER SKILLS
 
 \section{Computer Skills}
-\cvitemwithcomment{Office Tools}{Microsoft Excel, Word, PowerPoint; Adobe Illustrator}{very proficient in all 4}
-\cvitemwithcomment{Other}{FileMaker database, Geneious, SnapGene, \LaTeX, GitKraken}{basic working proficiency}{}
-\end{spacing}
-%\cvitemwithcomment{Tools}{}{very proficient in both}{}
-%\end{small}
-%\vspace*{2.5mm}
-%\section{General Skills}
-%\begin{small}
-%\cvlistdoubleitem{Able to multi-tastk}{Good time management}
-%\cvlistdoubleitem{Higly accurate data documentation}{Good in team-roles}
-%\cvlistdoubleitem{Adapt well to new environments}{Reliable and punctual}
+\cvitemwithcomment{Office}{Microsoft Excel, Word, PowerPoint}{very proficient}
+\cvitemwithcomment{Biology}{Geneious, SnapGene}{very proficient}
+\cvitemwithcomment{Other}{Adobe Illustrator, FileMaker database, \LaTeX, GitKraken}{basic}{}
 
-%\section{Interests}
-%\vspace*{1mm}
-%\cvitem{}{Gardening, climbing, hiking, camping, beekeeping}
-
+% VOLUNTEERING
+% Thomas: I would consider updating this and including it . . . You decide
 %\section{Volunteering}
 %\cvitem{}{Organize trips for teens and weekly daycare for children through church; tutor at international school in Malawi; help international students at German University.}
+
+
+% PUBLICATIONS 
 
 \nocite{Article3,Article2,Article1}
 \printbibliography[title={Publications}]
 
-\begin{comment}
-\thispagestyle{titlepage}
-\newpage
+% REFERENCES
+
 \section{References}
-%\begin{spacing}{1}
-%\vspace*{1mm}
-%\cvitem{}{\textbf{References are available on request.}}
 \cvitem{EMBL}{\textbf{Dr. James Sawitzke:} \emph{Head of Genetic and Viral Engineering Facility, EMBL Rome --- Italy} \emailsymbol \href{mailto:james.sawitzke@embl.it}{james.sawitzke@embl.it} \thinspace \phonesymbol +39 06 90091 268 \thinspace \homepagesymbol\textcolor{blue}{\url{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}}}
 \cvitem{M.Sc. Thesis}{\textbf{Dr. Wolfgang Hess:} \emph{Professor for Genetics \& Experimental Bioinformatics, University Freiburg  --- Germany} \emailsymbol \href{mailto:wolfgang.hess@biologie.uni-freiburg.de}{wolfgang.hess@biologie.uni-freiburg.de} \thinspace \phonesymbol +49 761 203-2796 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.cyanolab.de/}}}
-%\vspace{2mm}
 \cvitem{iGem}{\textbf{Dr. Maximilian Ulbrich:} \emph{Group leader at Centre for Biological Signalling Studies (BIOSS), University Freiburg --- Germany} \emailsymbol \href{mailtp:max.ulbrich@bioss.uni-freiburg.de}{ max.ulbrich@bioss.uni-freiburg.de} \thinspace \phonesymbol +49 761 203 97183 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.ulbrich-lab.com/}}}
-%\vspace{2mm}
 \cvitem{iGem}{\textbf{Dr. Nicole Gensch:} \emph{Laboratory manager of the Toolbox, BIOSS, University Freiburg --- Germany} \emailsymbol nicole.gensch@bioss.uni-freiburg.de \thinspace \phonesymbol +49 761 203 97225  \thinspace \homepagesymbol \textcolor{blue}{\url{http://www.bioss.uni-freiburg.de/de/toolbox/toolbox-home/}}}
 
-\end{comment}
-%\end{spacing}
-%\end{comment}
+\end{spacing}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                       % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
-
-
-%% end of file `template.tex'.
