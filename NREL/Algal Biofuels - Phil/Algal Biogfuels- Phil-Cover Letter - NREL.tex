@@ -1,3 +1,25 @@
+%%%%%%%%%%%%%%%%%   RABEA READ ME!!! %%%%%%%%%%%%%%%%%%%%%%%
+%
+% I am changing a few things just to clean it up. 
+% Since we will mostly be working in the latex files from now on, most of our comments should be here too. 
+% I will be moving towards only having the latex files in the github repository.
+% In order to differentiate between old comments, and between your comments and mine, I will begin all my comments particular to this document with `Thomas:' (unless it appears in `THOMAS GENERAL NOTES SECTION')
+% If you answer one of my comments with your own, please INDENT (just hit tab once or twice) and start with `Rabea:'  . . . This should make it easier to read these, thank you for your patience.
+%
+%
+% ALSO: Please don't be angry, I made a lot of suggestions and not too many corrections. All in all I think your other cover letters were better at conveying why you would be a good fit. Perhaps we can talk over the phone about this soon? Love you!
+
+%%%%%%%%%%%%%%%%%%%%%%%%% 		CHECKLIST		%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 		Did you:
+%				1) Check for the correct date?
+%				2) Check that the recipeient's name and address were correct?
+%				3) Copy into Word for spelling errors?
+%				4) Use a word counter online to check for overused language?
+
+
+%%%%%%%%%%%%%%%%%%%%%		 DOCUMENT CLASS, PACKAGES 		%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[11pt,a4paper,sans]{moderncv}
 
 \usepackage{float}
@@ -5,44 +27,53 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{verbatim}
-\usepackage[scale=0.8, top = 1.8cm, bottom = 3cm]{geometry}
+\usepackage{xcolor} % Added this for highlights
+\usepackage[normalem]{ulem} % Added this for strikeouts
+\usepackage[scale=0.8, top = 1.8cm, bottom = 3cm]{geometry}                  
 
-\moderncvstyle{casual}                             
-\moderncvcolor{blue}                               
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%% 		FOOTER, HEADER, MODERNCV INPUTS		 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%% FIX THIS SO IT LOOKS NICER
 \fancypagestyle{titlepage}{
 \fancyhead{}
 \fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
-
-
 \name{\vspace{-5mm}Rabea Jesser}{\vspace{3mm}}
-
-\begin{document}
-%- Ethylen in Synechocystis (Jianping Yu)
-
-
-
-%%%%%%%%%%%%% 			THOMAS NOTES 			%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+\moderncvstyle{casual}                             
+\moderncvcolor{blue}
 \thispagestyle{titlepage}
-
+% DONT FORGET TO UPDATE THIS!
 \recipient{NREL National Bioenergy Center}{15013 Denver West Parkway, Golden, CO 80401}
-%%%% DONT FORGET TO UPDATE THIS OR USE \today
+% DONT FORGET TO UPDATE THIS OR USE \today
 \date{\today}
 %%%%% IF YOU KNOW WHO YOU'RE SENDING THIS TO THEN GIVE THEIR NAME
 \opening{Dear Dr. Phil Pienkos,}
 \closing{Sincerely,}
-%\enclosure[Note]{M.Sc. Thesis, B.Sc., references and a more complete CV can also be sent upon request.}          
+%\enclosure[Note]{M.Sc. Thesis, B.Sc., references and a more complete CV can also be sent upon request.}   
+
+
+
+%%%%%%%%%%%%%%%%%%%% NOTES FOR CONTEXT OF LETTER, INFO ON ADDRESSEE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%- Ethylen in Synechocystis (Jianping Yu)
+
+%%%%%%%%%%%%%%%% 			THOMAS GENERAL NOTES 			%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Thomas: Still trying to keep the format as the methane letter (when it comes to comments and editing, etc.)
+% Thomas: So, I'm not sure why, but it seems like you had a template you were using for all the other non-NREL let
+
+
+
+%%%%%%%%%%%%%%%%%%%%%		BEGIN DOCUMENT		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}     
 \makelettertitle
 \begin{spacing}{1.15}
 
-I am fed up with being a contributor or at least a bystander in the destruction of our livelihood the environment---I want to be part of the solution and have an abiding desire to contribute to the National Bioenergy Center's efforts to find sustainable alternatives to fossil fuels. 
-Having focused on algae and cyanobacteria during my B.Sc. and M.Sc. theses, having participated in the iGEM (international Genetically Engineered Machine) competition and having worked for Europe's flagship laboratory for the life sciences in Rome, I bring the neccessary background knowledge and the enthusiasm, strong work ethic and eagerness to learn to make up for any deficiency.\par\vspace*{1mm}
+I am fed up with being a contributor or at least a bystander in the destruction of our livelihood the environment---I want to be part of the solution and have an abiding desire to contribute to the National Bioenergy Center's efforts to find sustainable alternatives to fossil fuels. %
+% Thomas: Same comment as in the `Methane' letter: it grabs their attention, but I would try and bend it more towards how you can help them. Since this is arguably one of the most important sentences in the letter, i will think more on it and focus more on it over the weekend
+Having focused on algae and cyanobacteria during my B.Sc. and M.Sc. theses, having participated in the iGEM (international Genetically Engineered Machine) competition and having worked for Europe's flagship laboratory for the life sciences in Rome, I bring the neccessary background knowledge and the enthusiasm, strong work ethic and eagerness to learn to make up for any deficiency.%
+% Thomas: 
+\par\vspace*{1mm}
 
 During my bachelor thesis I gained insight into the cultivation of \textit{N. oceanica} and \textit{P. tricornutum} and during my master thesis I successfully cultivated and processed Synechocystis sp. PCC 6803 {\href{https://www.ncbi.nlm.nih.gov/pubmed/29517395}{\textcolor{blue}{{\textit{(Publication)}}}}}. 
 These experiences have left me well prepared to work preparing and cultivating both algae and cyanobacteria. 
@@ -68,4 +99,3 @@ Thank you for your time and consideration, I look forward to hearing from you.
 %\vspace*{1mm} 
 \makeletterclosing
 \end{document}
-fa
