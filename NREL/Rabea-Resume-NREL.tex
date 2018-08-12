@@ -18,6 +18,8 @@
 \usepackage[backend=bibtex,style=numeric, sorting = ydnt]{biblatex}  %backend=biber is 'better'  
 \usepackage{csquotes} %Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.  
 \usepackage[T1]{fontenc}  
+\usepackage{multicol}
+
 
 \AfterPreamble{\usepackage{cleveref}} %\afterpreamble makes sure packages is only loaded after it does all the document class stuff, there is some sort of package conflict that makes this necessary
 
@@ -51,16 +53,16 @@
   }
 
 \newcommand*{\cvtripleitem}[7][.25em]{%
- \cvitem[#1]{#2}{%
-   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#3\end{minipage}%
+ \cvitem[#1]{\textbf{#2}}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#3}\end{minipage}%
    \hfill
-   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#4}\end{minipage}%
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#4}}\end{minipage}%
    \hspace*{\separatorcolumnwidth}%
-   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#5\end{minipage}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#5}\end{minipage}%
    \hfill
-   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{#6}\end{minipage}%
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#6}}\end{minipage}%
    \hspace*{\separatorcolumnwidth}%
-   \begin{minipage}[t]{\tripleitemmaincolumnwidth}#7\end{minipage}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#7}\end{minipage}%
    }%
 }
 
@@ -77,7 +79,7 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyhead[R]{\textcolor{gray}{$\sim$ \textbf{Rabea Jesser} $\sim$}}
+%\fancyhead[R]{\textcolor{gray}{$\sim$ \textbf{Rabea Jesser} $\sim$}}
 \fancypagestyle{titlepage}{
 \fancyhead{}
 \fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
@@ -86,7 +88,12 @@
 
 
 %%%%%%%%%%%%%%%% 			THOMAS GENERAL NOTES 			%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%
+% Thomas: I love the changes! The additional detail is great!
+%
+% Thomas: Also, it's easier for me to see when you reply to my comments on a new, indented line
+%				Thomas: Like this!
+%
 % Thomas: Do you want your address stuff to be at the bottom of every page or just the first one?		Rabea: Maybe every page is better
 %
 %
@@ -110,17 +117,17 @@
 %%%%%%%%%%%%%%%%%%%%%		BEGIN DOCUMENT		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
+%
 \thispagestyle{titlepage}
-
+%
 \renewcommand*{\namefont}{\fontsize{18}{2}\mdseries\upshape}
 \renewcommand*{\sectionfont}{\fontsize{16}{8}\mdseries\upshape}
 \renewcommand*{\subsectionfont}{\fontsize{14}{5}\mdseries\upshape}
-
+%
 \makecvtitle{}\vspace*{-13mm}
-
+%
 % SUMMARY PARAGRAPH
-
+%
 \begin{spacing}{1.2}
 \color{dark-gray}{
 Photosynthetic organisms will play a vital role in transitioning towards a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to help make this a reality. 
@@ -133,9 +140,9 @@ Through these experiences and my time competing in iGEM, I have  developed an ab
 All this combined with a strong work ethic and a passion for bioenergy make me an excellent candidate for the National Bioenergy Center.
 %and I believe working on your cutting edge research would bring me closer to my goals of making bioenergy a reliable and affordable alternative to fossil fuels.
 }
-
+%
 % VOCATIONAL EXPERIENCE
-
+%
 \vspace{2mm}
 \section{Vocational Experience}
 \cvitem{2017--present}{\emph{European Molecular Biology Laboratory (EMBL)}, Monterotondo, Italy}
@@ -149,8 +156,9 @@ All this combined with a strong work ethic and a passion for bioenergy make me a
 		\item Keep laboratory running smoothly (monitor lab supply, equipment and instruments, prepare stock solutions and media)
 \end{itemize}}
 \vspace{-6mm}
+%
 % RESEARCH EXPERIENCE
-
+%
 \section{Research Experience}
 \subsection{M.Sc. Thesis --- Genetics \& Experimental Bioinformatics}
 \cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29517395}{\textcolor{blue}{\textit{(Publication)}}}}}
@@ -166,20 +174,27 @@ All this combined with a strong work ethic and a passion for bioenergy make me a
 \subsection{iGem 2015 Competition }
 \cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of in vitro expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{(Publication)}}}}{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{(Team Website)}}}}}
 \cvitem{Achievements}{
+% Thomas: What might also be important here: what's the goal? why were you all doing this? To allow for a cheap, reliable and quick method to test multiple diseases, right? That's pretty fucking cool! You should mention that!
 \begin{itemize}  
 		\item Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool 
 		\item Collected and analyzed literature to find a commonly agreed on high-impact project
-		\item Overexpressed and purified proteins \textit{E. coli} % Same as above? Accident?
+		\item Over-expressed and purified proteins \textit{E. coli} % Overexpressed spelling? Using what technique?
 		\item Successfully managed lab as a team % I would try and add more detail here: interdisciplinary, 20 students, were you the manager?
+%				Thomas:	 These updates are so great! So specific! It's wonderful, really. The one above would be one of the few which is still a bit vague, can you add any more detail? If not I think it'll be ok.		
 		\item Designed explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{website}.}}} % with what program(s)?
-		\item Accurately recorded and communicated results comprehensively for all team members as well as to a broad audience% how did you record it and where/with whom/how did you communicate the results?
-	\item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}.}}}
-		%	Rabea: this is the interlab study where we only contrubited, I moved our real publication to after the Topic
-\end{itemize}}
-%\cvitem{Publication \& Website}{
-%Bender J. et al., .{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{Link}}}}. \newline
-%{\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{Team Website}}}}
-% Thomas: Note sure about this . . . I moved it to make it more predominant (so that they would see it more clearly) but I think your original way was better, feel free to choose either or adapt them		%Rabea: takes up too much space
+		\item Accurately recorded and communicated results comprehensively for all team members as well as to a broad audience% Thomas: Who is the `broader audience' here? Was it at the international iGEM conference?
+		\item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}.}}}
+			%	Rabea: this is the interlab study where we only contrubited, I moved our real publication to after the Topic
+%					Thomas: Ok, cool, as long as they can see the difference (or rather that they are two different works) it'll be fine				
+\end{itemize}
+%\begin{multicols}{2}
+%\begin{itemize}
+%    \item Successfully managed lab as a team
+%    \item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}.}}}
+%\end{itemize}
+%\end{multicols}
+% Thomas: Tried to use this to save space (set up two columns for your shorter points
+}
 \vspace{-6mm}
 \cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
 \vspace{2mm}
@@ -191,49 +206,40 @@ All this combined with a strong work ethic and a passion for bioenergy make me a
 		\item Extracted and analyzed the size of a periplastidal membrane complex from \textit{P. tricornutum} 
 		\item Assembled genetic constructs in \textit{E. coli} using traditional cloning methods
 \end{itemize}}
+%
+% EDUCATION
+\thispagestyle{titlepage}
+%
 \section{Education}
 \cventry{2014--2016}{M.Sc. Biology}{\href{http://www.bio.uni-freiburg.de/studies/degree-programs/master-en}{\textcolor{blue}{Albert-Ludwigs-Universit\"at Freiburg}}}{Germany}{\textit{GPA 4.0}}{}
-%\vspace*{2mm}
-%\cvitem{Specific Interests}{
-%\cvitem{Focuses}{
-%\begin{itemize}  
-%\item Microbiology (Genetics and experimental bioinformatics---{\href{http://www.cyanolab.de/index.php}{\textcolor{blue}{\textit{Hess}}}} lab)
-%\item Synthetic Biology ({\href{https://www.bioss.uni-freiburg.de/synthetic-biology/intro/}{\textcolor{blue}{\textit{Weber}}}} and {\href{https://www.ceplas.eu/de/forschung/c4-photosynthese-ra-b/prof-dr-matias-zurbriggen/}{\textcolor{blue}{\textit{Zurbriggen}}}} lab)
-%\item Plant sciences (Plant Biotechnology---{\href{http://plant-biotech.net/}{\textcolor{blue}{\textit{Reski}}}} lab; Plant Biomimetics---{\href{https://www.botanischer-garten.uni-freiburg.de/mitarbeiter/pbg/thomasspeck}{\textcolor{blue}{\textit{Speck}}}} lab)
-%\end{itemize}}
 \cventry{2011--2014}{B.Sc. Biology}{\href{https://www.uni-marburg.de/fb17/fachgebiete/zellbio/zellbioi?language_sync=1}{\textcolor{blue}{Philipps-Universit\"at Marburg}}}{Germany}{\textit{GPA 4.0}}{}
-%\vspace*{2mm}
-%\cvitem{Specific Interests}{
-%\cvitem{Focus}{
-%\begin{itemize}  
-%\item Algal Cell Biology --- Maier lab
-%\end{itemize}}
+%
 % LANGUAGES
+%
 \section{Languages}
-% Thomas: Thought it would be better to condense this to save space (I don't think they care that you are semi-fluent in Portuguese, fucking American scum!
-%	Thomas': Which of the below do you like more?
-%\cvlistdoubleitem{English- \emph{fluent}}{German- \emph{native}}
-\cvtripleitem{German}{Native}{English}{Fluent}{Italian}{Fluent}
-
+\cvtripleitem{German:}{Native}{English:}{Fluent}{Italian:}{Fluent}
+%
 % COMPUTER SKILLS
-
+%
 \section{Computer Skills}
 \cvitemwithcomment{Office}{Microsoft Excel, Word, PowerPoint}{very proficient}
 \cvitemwithcomment{Biology}{Geneious, SnapGene}{very proficient}
 \cvitemwithcomment{Other}{Adobe Illustrator, FileMaker database, \LaTeX, GitKraken}{basic}{}
-
- %Thomas: I would consider updating this and including it . . . You decide		%		Rabea: I cannot think of anything relevant for them from my volunteering
+%
+% Thomas: I would consider updating this and including it . . . You decide		%		Rabea: I cannot think of anything relevant for them from my volunteering
 %\section{Volunteering}
-%\cvitem{}{Cummunity garden at EMBL, organized summer camp for 36 young women with 11 co-workers}
-
-
+%\cvitem{}{Community garden at EMBL, organized summer camp for 36 young women with 11 co-workers}
+%
+%
 % PUBLICATIONS 
+%
 
-%\nocite{Article3,Article2,Article1}
-%\printbibliography[title={Publications}]
-
+% Thomas: RABEA! So you had commented this out (lack of space?) but they said you should ABSOLUTELY have your publications on here, and were much less concerned with a 2 page CV (one of them even said now that it's online he rarely even notices how long they are)
+\nocite{Article3,Article2,Article1}
+\printbibliography[title={Publications}]
+%
 % REFERENCES
-
+%
 \section{References}
 \cvitem{EMBL}{\textbf{Dr. James Sawitzke:} \emph{Head of Genetic and Viral Engineering Facility, EMBL Rome --- Italy} \emailsymbol \href{mailto:james.sawitzke@embl.it}{james.sawitzke@embl.it} \thinspace \phonesymbol +39 06 90091 268 \thinspace \homepagesymbol\textcolor{blue}{\url{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}}}
 \cvitem{M.Sc. Thesis}{\textbf{Dr. Wolfgang Hess:} \emph{Professor for Genetics \& Experimental Bioinformatics, University Freiburg  --- Germany} \emailsymbol \href{mailto:wolfgang.hess@biologie.uni-freiburg.de}{wolfgang.hess@biologie.uni-freiburg.de} \thinspace \phonesymbol +49 761 203-2796 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.cyanolab.de/}}}
@@ -241,5 +247,5 @@ All this combined with a strong work ethic and a passion for bioenergy make me a
 \cvitem{iGem}{\textbf{Dr. Nicole Gensch:} \emph{Laboratory manager of the Toolbox, BIOSS, University Freiburg --- Germany} \emailsymbol nicole.gensch@bioss.uni-freiburg.de \thinspace \phonesymbol +49 761 203 97225  \thinspace \homepagesymbol \textcolor{blue}{\url{http://www.bioss.uni-freiburg.de/de/toolbox/toolbox-home/}}}
 
 \end{spacing}
-
+\thispagestyle{titlepage}
 \end{document}
