@@ -1,8 +1,3 @@
-%%%%%%%%%%%%%%%%%   HOW TO COMMENT!!! %%%%%%%%%%%%%%%%%%%%%%%
-% Begin all comments particular to this document with `Thomas:' (unless it appears in `THOMAS GENERAL NOTES SECTION')
-%To answer comments  please INDENT (just hit tab once or twice) and start with `Rabea:' 
-%
-
 %%%%%%%%%%%%%%%%%%%%%%%%% 		CHECKLIST		%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % 		Did you:
@@ -12,101 +7,228 @@
 %				4) Use a word counter online to check for overused language?
 
 
-%%%%%%%%%%%%%%%%%%%%%		 DOCUMENT CLASS, PACKAGES 		%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%		 DOCUMENT CLASS, PACKAGES, COMMANDS, SOURCING 		%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[12pt,a4paper,sans]{moderncv}
+\usepackage{graphicx, fancyhdr, setspace, verbatim, amsmath, acronym, times, epstopdf, amssymb, mathrsfs, latexsym, wrapfig, url, float, booktabs, microtype, multirow, textcomp, listings, blindtext}
+\usepackage[scale=0.825, top = 1.75cm, bottom = 2.6cm]{geometry}
+\usepackage[font={footnotesize,it}]{caption}  
+\usepackage[english]{babel}\addto\captionsenglish  
+{\renewcommand{\bibname}{References}}  
+\usepackage[backend=bibtex,style=numeric, sorting = ydnt]{biblatex}  %backend=biber is 'better'  
+\usepackage{csquotes} %Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.  
+\usepackage[T1]{fontenc}  
+\usepackage{multicol}
 
-\usepackage{float, caption, fancyhdr, setspace, verbatim, xcolor}
-\usepackage[normalem]{ulem} % Added this for strikeouts
-\usepackage[scale=0.8, top = 3cm, bottom = 3cm]{geometry}                  
 
+\AfterPreamble{\usepackage{cleveref}} %\afterpreamble makes sure packages is only loaded after it does all the document class stuff, there is some sort of package conflict that makes this necessary
+
+\addbibresource{publications-Rabea.bib}  
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+
+\definecolor{dark-gray}{gray}{0.20}
+
+% Try to create `triple' list
+\newlength\Tripleitemmaincolumnwidth
+\newlength\tripleitemmaincolumnwidth
+
+\AtBeginDocument{%
+\setlength\tripleitemmaincolumnwidth{% 
+  \maincolumnwidth-2\hintscolumnwidth-2\separatorcolumnwidth}%
+\setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%   
+  }
+
+\newcommand*{\cvtripleitem}[7][.25em]{%
+ \cvitem[#1]{\textbf{#2}}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#3}\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#4}}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#5}\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#6}}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#7}\end{minipage}%
+   }%
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% 		FOOTER, HEADER, MODERNCV INPUTS		 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\moderncvstyle{casual}                             
+\moderncvcolor{blue}                              
+\nopagenumbers{}                          
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+%\fancyhead[R]{\textcolor{gray}{$\sim$ \textbf{Rabea Jesser} $\sim$}}
 \fancypagestyle{titlepage}{
 \fancyhead{}
 \fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
-\name{\vspace{-5mm}Rabea Jesser}{\vspace{3mm}}
-\moderncvstyle{casual}                             
-\moderncvcolor{blue}
-\thispagestyle{titlepage}
-% DONT FORGET TO UPDATE THIS!
-\recipient{NREL National Bioenergy Center}{15013 Denver West Parkway,\\ Golden, CO, 80401
-}
-% DONT FORGET TO UPDATE THIS OR USE \today
-\date{\today}
-%%%%% IF YOU KNOW WHO YOU'RE SENDING THIS TO THEN GIVE THEIR NAME
-\opening{Dear Dr. Pienkos,\vspace{-2mm}}
-\closing{Sincerely,}
-%\enclosure[Note]{M.Sc. Thesis, B.Sc., references and a more complete CV can also be sent upon request.}   
 
-
-%%%%%%%%%%%%%%%%%%%% NOTES FOR CONTEXT OF LETTER, INFO ON ADDRESSEE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% HEY! This is what I found under Philip Pleikos on this page: https://www.nrel.gov/bioenergy/algal-biofuels.html =>
-
-%Establishing Testbeds
-%
-%As a member of the Algae Testbed Public-Private Partnership led by Arizona State University, we are focusing on establishing a sustainable network of regional testbeds to gather and share information within the algal research and development community, facilitate innovation, and accelerate growth of the algal biofuels and bioproducts industry. Our goals are to increase stakeholder access to high-quality, outdoor cultivation and laboratory facilities; support DOE's techno-economic, sustainability, and resource modeling activities; close critical knowledge gaps; and inform analyses of the state of technology for producing algal biofuels and bioproducts.
-%
-%Contact: Philip Pienkos
-%
-%There is also this:
-%Algal Biomass Conversion
-%
-%NREL is developing novel process options to reduce the cost of algal biofuel production through more complete utilization of algal biomass. We have developed a low-cost, low-energy method to deconstruct algal biomass to allow for recovery and upgrading of lipids, carbohydrates, and proteins to biofuels and bioproducts.
-%
-%Contact: Philip Pienkos
-%
-% It sounds like if you want to really reach him, you should tailor some of the message around this: ``establishing a sustainable network of regional test beds'' to facilitate others' research and accelerate the industry
-
+\name{Rabea Jesser ---}{ CV}
 
 
 %%%%%%%%%%%%%%%% 			THOMAS GENERAL NOTES 			%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% Comment like this:
+%				Thomas: Like this!
+%
+%
+%
+%
+% Summary paragraph: 4-5 easily digestible (readable) sentences.
+%1) I know what you're working on and here's roughly why I could help; 
+%2) Here are some hard skills I have that you would find useful; 
+%3) Here are some soft skills I could use anywhere that you would find useful; 
+%4) I am really passionate about what you do and bring a great attitude and work ethic 
+%5) You all are my dream job, please please please take me (hysterical sobbing)! 
 
-%make sense `CHRONOLOGICALLY'. 
 
-% ALWAYS ALWAYS ALWAYS keep this in mind when writing this: ``NREL advances the science and engineering of energy efficiency, sustainable transportation, and renewable power technologies and provides the knowledge to integrate and optimize energy systems.'' This is the language you should try to adopt when possible and especially when talking about why you want to work for them
+
+%%%%%%%%%%%%%%%%			RABEA GENERAL NOTES			
+%%% 	
+%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%		BEGIN DOCUMENT		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{document}     
-\makelettertitle
+\begin{document}
+%
+\thispagestyle{titlepage}
+%
+\renewcommand*{\namefont}{\fontsize{15}{2}\mdseries\upshape}
+\renewcommand*{\sectionfont}{\fontsize{14}{8}\mdseries\upshape}
+\renewcommand*{\subsectionfont}{\fontsize{13}{5}\mdseries\upshape}
+%
+\makecvtitle{}\vspace*{-13mm}
+%
+% SUMMARY PARAGRAPH
+%
 \begin{spacing}{1.2}
+\color{dark-gray}{
+Photosynthetic organisms will play a vital role in transitioning towards a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
+Through my time at Europe's flagship laboratory for life sciences (EMBL) and my theses I have honed my skills in genetically engineering  \textit{E. coli} as well as algae and cyanobacteria.%
+These experiences and my time competing in iGEM, I have helped me develop an eye for detail and an ability to function both independently and in an interdisciplinary team. % 
+These skills combined with a strong work ethic and a passion for bioenergy  would make me an excellent candidate for the National Bioenergy Center.
+%		Thomas: What part of the NBC does he work in?
+}
+%
+% VOCATIONAL EXPERIENCE
+%
+%\vspace{2mm}
+\section{Professional Experience}
+\cvitem{2017--present}{\emph{{\:\href{https://www.embl.it/index.php}{\textcolor{blue}{\textit{European Molecular Biology Laboratory (EMBL)}}}}}, Rome, Italy}
+\cvitem{Job Title}{\textbf{Technical Officer}, {\:\href{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}{\textcolor{blue}{\textit{Genetic and Viral Engineering Facility}}}}}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Produced high-quality genetic constructs in \textit{E. coli }and viral vector tools like recombinant AAV and lentivirus in HEK cells
+		\item Established new protocols for the production of viral vector tools 
+		\item Automated calculations for experimental procedures using FileMaker database and Microsoft Excel
+		\item Improved FileMaker database and accurately manage sample data 
+		\item Ensured functional laboratory (monitored lab supply, equipment and instruments, prepared stock solutions and media)
+\end{itemize}}
+\vspace{-6mm}
+%
+% RESEARCH EXPERIENCE
+\vspace{-2mm}
+\section{Research Experience}
+\subsection{M.Sc. Thesis --- Genetics \& Experimental Bioinformatics}
+\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.}{\:\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{\textit{(Publication)}}}}}
+\cvitem{Motivation}{Explore applicability of endogenous Synechocystis CRISPR/Cas system in metabolic engineering}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Explored the endogenous Synechocystis CRISPR-Cas system for appplication in metabolic engineering 
+		\item Successfully generated Synechocystis mutant strains via homologous recombination and transformed them with plasmid DNA via 
+		\item Analyzed crRNA processing both \textit{in vitro} with mutant Synechocystis Cas6 proteins expressed in \textit{E. coli} and \textit{in vitro} transcribed RNA and in Synechocystis culture with inducible artificial crRNA and mutant Cas6 proteins
+		\item Assembled all genetic constructs in \textit{E. coli} using Gibson cloning
+\end{itemize}}
+%\vspace{3mm}
+\subsection{iGem Competition  }
+\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of in vitro expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{(Publication)}}}}{\:\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{(Team Website)}}}}}
+\cvitem{Motivation}{Allow for a cheap and quick pre-test that screens for multiple diseases}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool 
+		\item Analyzed literature to find a commonly agreed on high-impact project
+		\item Overexpressed and purified proteins \textit{E. coli} via NiNTA column
+		\item Successfully organized ourself as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab
+		\item Taught myself adobe illustrator and designed most of the explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{website}}}} 
+		\item Accurately recorded and communicated results comprehensively for all team members, to a crowdfunding community and to a jury and fellow students at the final international conference
+		\item Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study}}}}				
+\end{itemize}
+}
+\vspace{-6mm}
+\cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
+%\vspace{2mm}
+\subsection{B.Sc. Thesis --- Cell Biology}
+\cvitem{Topic}{\emph{\textit{Nannochloropsis oceanica} as an expression system for recombinant proteins and studies on protein transport across the periplastidal membrane of \textit{Phaeodactylum tricornutum}.}}
+%		%Rabea: I didn't really get anywhere on the N. oceanica part, should I still metion it?
+\cvitem{Motivation}{Enlargen molecular toolbox for \textit{P. tricornutum} and explore \textit{N. oceanica} as expression platform for recombinant antibodies}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item Expressed recombinant single-chain antibody in\textit{ P. tricornutum} to study intracellular protein transport
+		%\item Extracted and analyzed the size of a periplastidal membrane complex from \textit{P. tricornutum} 
+		\item Assembled genetic constructs in \textit{E. coli} using traditional cloning methods
+\end{itemize}}
+%
+% EDUCATION
+\thispagestyle{titlepage}
+\vspace{-8mm}
+\section{Education}
+\cventry{2014--2016}{M.Sc. Biology}{\href{http://www.bio.uni-freiburg.de/studies/degree-programs/master-en/translational_biology}{\textcolor{blue}{Albert-Ludwigs-Universit\"at Freiburg}}}{Germany}{\textit{GPA 4.0}}{}
+\cventry{2011--2014}{B.Sc. Biology}{\href{ https://www.uni-marburg.de/fb17/index_html-en?set_language=en?}{\textcolor{blue}{Philipps-Universit\"at Marburg}}}{Germany}{\textit{GPA 4.0}}{}
+%
+% LANGUAGES
+%
+\section{Languages}
+\cvtripleitem{German:}{Native}{English:}{Fluent}{Italian:}{Fluent}
+%
+% COMPUTER SKILLS
+%
+\section{Computer Skills}
+\cvitemwithcomment{Office}{Microsoft Excel, Word, PowerPoint}{very proficient}
+\cvitemwithcomment{Biology}{Geneious, SnapGene}{very proficient}
+\cvitemwithcomment{Other}{Adobe Illustrator, FileMaker database, \LaTeX, GitKraken}{basic}{}
+%
 
-% This is just still here because I want to have the phrases at hand: hands-on laboratory experience, strong work ethic and analytical thinking at the National Bioenergy Center to find affordable, practical alternatives to fossil fuels
+%\section{Volunteering}
+%\cvitem{}{Community garden at EMBL, organized summer camp for 36 young women with 11 co-workers}
+%
+%
+% PUBLICATIONS 
+%
 
-Sharing NREL's passion for renewables, I will wholeheartedly invest my laboratory experience, strong work ethic and analytical thinking to find affordable fossil fuel alternatives and to work towards the National Bioenergy Center's goal of accelerating the adoption of biofuels.
-My experience in engineering and analyzing microorganisms like algae, cyanobacteria and \textit{E. coli} combined with the team spirit and interpersonal skills I developed during the iGEM (international Genetically Engineered Machine) competition make me a perfect fit for the NBC. 
-Furthermore, the initiative and ability to adapt to new situations I have displayed while working at Europe's flagship laboratory for the life sciences (EMBL) ensure that I can quickly transition to your lab and begin making contributions from day one.\par\vspace*{3mm}
+\nocite{Article3,Article2,Article1}
+\printbibliography[title={Publications}]
+%
+% REFERENCES
+%
+\section{References}
+\cvitem{EMBL}{\textbf{Dr. James Sawitzke:} \emph{Head of Genetic and Viral Engineering Facility, EMBL Rome --- Italy} \emailsymbol \href{mailto:james.sawitzke@embl.it}{james.sawitzke@embl.it} \thinspace \phonesymbol +39 06 90091 268 \thinspace \homepagesymbol\textcolor{blue}{\url{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}}}
+\cvitem{M.Sc. Thesis}{\textbf{Dr. Wolfgang Hess:} \emph{Professor for Genetics \& Experimental Bioinformatics, University Freiburg  --- Germany} \emailsymbol \href{mailto:wolfgang.hess@biologie.uni-freiburg.de}{wolfgang.hess@biologie.uni-freiburg.de} \thinspace \phonesymbol +49 761 203-2796 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.cyanolab.de/}}}
+\cvitem{iGem}{\textbf{Dr. Maximilian Ulbrich:} \emph{Group leader at Centre for Biological Signalling Studies (BIOSS), University Freiburg --- Germany} \emailsymbol \href{mailtp:max.ulbrich@bioss.uni-freiburg.de}{ max.ulbrich@bioss.uni-freiburg.de} \thinspace \phonesymbol +49 761 203 97183 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.ulbrich-lab.com/}}}
+\cvitem{iGem}{\textbf{Dr. Nicole Gensch:} \emph{Laboratory manager of the Toolbox, BIOSS, University Freiburg --- Germany} \emailsymbol nicole.gensch@bioss.uni-freiburg.de \thinspace \phonesymbol +49 761 203 97225  \thinspace \homepagesymbol \textcolor{blue}{\url{http://www.bioss.uni-freiburg.de/de/toolbox/toolbox-home/}}}
 
-
-My journey with photosynthetic organisms started during my B.Sc. thesis with the diatom \textit{P. tricornutum}, in which I expressed a recombinant antibody to characterize intracellular protein transport. 
-Later during my M.Sc. thesis, I explored the use of the endogenous CRISPR-Cas system of Synechocystis sp. PCC6803 in metabolic engineering by modifying the Cas proteins of one of its CRISPR loci via homologous recombination and providing an artificial crRNA via conjugation.
-		%Rabea: maybe this should move up:
-In the process I became familiar with extracting and analyzing RNA \textit{in vitro} and from Synechocystis cultures, documenting pigment content via photometric measurements and producing genetic constructs and recombinant proteins in \textit{E. coli}.
-		%Rabea: I didn't like this sentence, how about this:
-Having learned from previous default, I  {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{published}}}}} the findings of my M.Sc. thesis.
-		%Rabea: and I didn't publish on the metabolic engineering because it didn't work the way we had it designed, in the end I only published further characterization of the Cas6 protein, not to say that's worth nothing but I cannot write it the way it was
-\par\vspace*{3mm}
- 
-During this time I also participated in an interdisciplinary team of 20 students to develop a low-cost, multiplexed and label-free diagnostic tool as part of the Univerisity of Freiburg's team in the iGEM competition.
-Within eight months of wet lab we produced high-value {\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{data}}}}, presenting our findings on our {\href{http://2015.igem.org/Team:Freiburg}{\textcolor{blue}{\textit{website}}}} and at iGEM's international conference at MIT, where we were awarded a Gold medal and nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.
-Throughout iGEM we successfully ran our own lab independently, including ordering reagents, communicating with companies and funding agencies for financial or material aid, making and sterilizing media and keeping the lab and our data organized. 
-This experience further demonstrates my strong work ethic, team-player attitude and ability to distill the essentials from scientific findings for my team and a wider audience.\par\vspace*{3mm}
-		
-After my M.Sc., I began working in EMBL's Genetic Engineering Facility, which evolved into the Genetic and Viral Engineering Facility soon after I started. 
-As part of this transition, I quickly adapted and established new protocols for the production and quantification of viral vector tools in mammalian cell culture. 			
-Initially our two person team only provided recombinant AAV, but as my skills progressed, the scope of my portfolio has expanded to include recombinant Lentivirus and we are in the process of adding HSV.
-In my position with EMBL I have expanded on my organizational skills and taken the initiative to extend the facility's database and automate calculations for protocols using Excel and Filemaker, helping streamline the lab and more consistently produce and record valuable data.
-Additionally, I am continually applying techniques I learned from a professional development course on project management for scientists across more than 12 projects to deliver high quality final products in a timely fashion to our partners.\par\vspace*{3mm}
-
-Although EMBL offered extensive experience in the lab and provided room for growth, the research focus is simply not after my own heart.
-Your lab offers the opportunity both to continue my journey with photosynthetic organisms and help bring a sustainable alternative to fossil fuels to fruition. 
-If you agree, I would appreciate the opportunity to discuss any potential position and my contributions in more detail. 
-Thank you for your time and consideration, I look forward to hearing from you.
- 
-\vspace{5mm}
 \end{spacing}
-\makeletterclosing
+\thispagestyle{titlepage}
 \end{document}
