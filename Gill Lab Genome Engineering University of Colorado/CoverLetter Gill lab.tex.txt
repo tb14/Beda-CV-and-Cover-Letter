@@ -43,7 +43,10 @@
 %• Genome-engineering to IMPROVE CELLULOSIC biofuels production
 
 %Our research is supported through a number of sources including current or previous grants from the NSF, NIH, DOE, State of Colorado, University of Colorado, Colorado Center for Biorefining and Biofuels, the Cystic Fibrosis Foundation, Agilent, Shell, Dupont, and Opx Bioproducts.%%%%%%%%%%%%%%
+%%%%Involved here: 
+%%%%Design and engineering of synthetic control architectures
 
+%%advance biological engineering to a new level of throughput and complexity. Guided by computer-aided design platforms, this research will develop new finely tuned microbial strains containing orthogonal regulatory networks. The redesigned strains will be tailored to grow on a variety of feedstocks, tolerate toxic metabolites and other stresses, and produce valuable molecules. Building on technologies and knowledge developed with prior DOE funding from the Biosystems Design program, the project will further develop the necessary technical and computational infrastructure to achieve its goals, initially working with Escherichia coli and Saccharomyces cerevisiae and later transferring the technologies to other non-model bacteria and yeast species.
 
 \thispagestyle{titlepage}
 \recipient{Colorado School of Mines}{1500 Illinois St., Golden, CO 80401}
