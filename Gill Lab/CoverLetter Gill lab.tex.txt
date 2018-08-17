@@ -61,31 +61,32 @@
 \makelettertitle
 \begin{spacing}{1.1}
 
-Having seen a glimpse of the possibilities of recombineering and CRISPR based technologies while working for Jim Sawitzke in the Genetic and Viral Engineering Facility of Europe's flagship laboratory for the life sciences (EMBL) in Rome make me want to learn more about it. My hands-on laboratory experience with various microorganisms and especially and cyanobacterial CRISPR/Cas system combined with the team spirit and interpersonal skills I developed during the iGEM (international Genetically Engineered Machine) competition make me a perfect fit for the your research group. 
+Having seen a glimpse of the possibilities of recombineering and CRISPR based technologies while working for Jim Sawitzke in the Genetic and Viral Engineering Facility of Europe's flagship laboratory for the life sciences (EMBL) in Rome, make me want to learn more about it. My hands-on laboratory experience with various microorganisms and especially the cyanobacterial CRISPR/Cas system combined with the team spirit and interpersonal skills I developed during the iGEM (international Genetically Engineered Machine) competition make me a perfect fit for the your research group. 
 Furthermore, the initiative and ability to adapt to new situations I have displayed while working for EMBL ensure that I can quickly transition to your lab and begin making contributions from day one.\par\vspace*{3mm}
 
 
-My fist direct interaction with a recombination technology was during the iGEM competition when we designed and cloned our genetic constructs using Gibson Assembly. During this time one of our supervisors also worked on a new technology, which follows the same principle of Gibson Assembly but takes advantage of the cells inherent recombineering system---he called it AQUA (advanced quick assembly) cloning. Later during my M.Sc. I further used Gibson Assembly and AQUA cloning and also got to explore the use of the endogenous CRISPR-Cas system of Synechocystis sp. PCC6803 in metabolic engineering by modifying the Cas proteins of one of its CRISPR loci via homologous recombination and providing an artificial crRNA via conjugation.
-In the process I became familiar with extracting and analyzing RNA \textit{in vitro} and from Synechocystis cultures, documenting pigment content via photometric measurements and producing genetic constructs and recombinant proteins in \textit{E. coli}.
-		%Rabea: I didn't like this sentence, how about this:
-Having learned from previous default, I  {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{published}}}}} the findings of my M.Sc. thesis.
-		%Rabea: and I didn't publish on the metabolic engineering because it didn't work the way we had it designed, in the end I only published further characterization of the Cas6 protein, not to say that's worth nothing but I cannot write it the way it was
-\par\vspace*{3mm}
- 
-During this time I also participated in an interdisciplinary team of 20 students to develop a low-cost, multiplexed and label-free diagnostic tool as part of the Univerisity of Freiburg's team in the iGEM competition.
+My fist direct interaction with a recombination technology was during the iGEM competition when we designed and cloned our genetic constructs using Gibson Assembly. During this time one of our supervisors also worked on a new technology, which follows the same principle of Gibson Assembly but takes advantage of the cells inherent recombineering system---he called it AQUA (advanced quick assembly) cloning. During this time I also participated in an interdisciplinary team of 20 students to develop a low-cost, multiplexed and label-free diagnostic tool as part of the Univerisity of Freiburg's team in the iGEM competition.
 Within eight months of wet lab we produced high-value {\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{data}}}}, presenting our findings on our 
 {\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{website}}}} and at iGEM's international conference at MIT, where we were awarded a Gold medal and nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.
 Throughout iGEM we successfully ran our own lab independently, including ordering reagents, communicating with companies and funding agencies for financial or material aid, making and sterilizing media and keeping the lab and our data organized. 
 This experience further demonstrates my strong work ethic, team-player attitude and ability to distill the essentials from scientific findings for my team and a wider audience.\par\vspace*{3mm}
-		
-After my M.Sc., I began working in EMBL's Genetic Engineering Facility, which evolved into the Genetic and Viral Engineering Facility soon after I started. 
-As part of this transition, I quickly adapted and established new protocols for the production and quantification of viral vector tools in mammalian cell culture. 			
+Later during my M.Sc. I further used Gibson Assembly and AQUA cloning and also got to explore the use of the endogenous CRISPR-Cas system of Synechocystis sp. PCC6803 in metabolic engineering by modifying the Cas proteins of one of its CRISPR loci via homologous recombination and providing an artificial crRNA via conjugation.
+In the process I became familiar with extracting and analyzing RNA \textit{in vitro} and from Synechocystis cultures, documenting pigment content via photometric measurements, producing genetic constructs and recombinant proteins in \textit{E. coli} and eventually  {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{published}}}}} the further characterization of the CRISPR maturation endonuclease Cas6-1.
+		%Rabea: and I didn't publish on the metabolic engineering because it didn't work the way we had it designed, in the end I only published further characterization of the Cas6 protein, not to say that's worth nothing but I cannot write it the way it was
+\par\vspace*{3mm}
+ 	
+Until then I did not know a lot about the \textit{E. coli }recombination machinery but after my M.Sc., I began working for Jim Sawitzke in EMBL's Genetic Engineering Facility, which evolved into the Genetic and Viral Engineering Facility soon after I started. 
+			%Get more details here, be more sure about what you actually want to say!
+As part of this transition, I not only got to use different recombineering procedures and clonings for CRISPR/Cas9 approaches but also quickly adapted and established new protocols for the production and quantification of viral vector tools in mammalian cell culture. 			
+
 Initially our two person team only provided recombinant AAV, but as my skills progressed, the scope of my portfolio has expanded to include recombinant Lentivirus and we are in the process of adding HSV.
 In my position with EMBL I have expanded on my organizational skills and taken the initiative to extend the facility's database and automate calculations for protocols using Excel and Filemaker, helping streamline the lab and more consistently produce and record valuable data.
 Additionally, I am continually applying techniques I learned from a professional development course on project management for scientists across more than 12 projects to deliver high quality final products in a timely fashion to our partners.\par\vspace*{3mm}
 
 Although EMBL offered extensive experience in the lab and provided room for growth, the research focus is simply not after my own heart.
+			%Rabea: rephrase here: 
 Your lab offers the opportunity both to continue my journey with photosynthetic organisms and help bring a sustainable alternative to fossil fuels to fruition. 
+
 If you agree, I would appreciate the opportunity to discuss any potential position and my contributions in more detail. 
 Thank you for your time and consideration, I look forward to hearing from you.
  
