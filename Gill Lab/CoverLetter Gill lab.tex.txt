@@ -61,13 +61,11 @@
 \makelettertitle
 \begin{spacing}{1.1}
 
-Given my experience in engineering and analyzing microorganisms like \textit{E. coli} and cyanobacteria that I aquired while working for the Genetic and Viral Engineering Facility of Europe's flagship laboratory for the life sciences (EMBL) in Rome and during my M.Sc. thesis combined with the team spirit and interpersonal skills I developed during the iGEM (international Genetically Engineered Machine) competition make me a perfect fit for the your research group. 
-Furthermore, the initiative and ability to adapt to new situations I have displayed while working at  ensure that I can quickly transition to your lab and begin making contributions from day one.\par\vspace*{3mm}
+Having seen a glimpse of the possibilities of recombineering and CRISPR based technologies while working for Jim Sawitzke in the Genetic and Viral Engineering Facility of Europe's flagship laboratory for the life sciences (EMBL) in Rome make me want to learn more about it. My hands-on laboratory experience with various microorganisms and especially and cyanobacterial CRISPR/Cas system combined with the team spirit and interpersonal skills I developed during the iGEM (international Genetically Engineered Machine) competition make me a perfect fit for the your research group. 
+Furthermore, the initiative and ability to adapt to new situations I have displayed while working for EMBL ensure that I can quickly transition to your lab and begin making contributions from day one.\par\vspace*{3mm}
 
 
-My journey with photosynthetic organisms started during my B.Sc. thesis with the diatom \textit{P. tricornutum}, in which I expressed a recombinant antibody to characterize intracellular protein transport. 
-Later during my M.Sc. thesis, I explored the use of the endogenous CRISPR-Cas system of Synechocystis sp. PCC6803 in metabolic engineering by modifying the Cas proteins of one of its CRISPR loci via homologous recombination and providing an artificial crRNA via conjugation.
-		%Rabea: maybe this should move up:
+My fist direct interaction with a recombination technology was during the iGEM competition when we designed and cloned our genetic constructs using Gibson Assembly. During this time one of our supervisors also worked on a new technology, which follows the same principle of Gibson Assembly but takes advantage of the cells inherent recombineering system---he called it AQUA (advanced quick assembly) cloning. Later during my M.Sc. I further used Gibson Assembly and AQUA cloning and also got to explore the use of the endogenous CRISPR-Cas system of Synechocystis sp. PCC6803 in metabolic engineering by modifying the Cas proteins of one of its CRISPR loci via homologous recombination and providing an artificial crRNA via conjugation.
 In the process I became familiar with extracting and analyzing RNA \textit{in vitro} and from Synechocystis cultures, documenting pigment content via photometric measurements and producing genetic constructs and recombinant proteins in \textit{E. coli}.
 		%Rabea: I didn't like this sentence, how about this:
 Having learned from previous default, I  {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{published}}}}} the findings of my M.Sc. thesis.
