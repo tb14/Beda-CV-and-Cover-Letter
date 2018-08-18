@@ -76,7 +76,7 @@ In the process I became familiar with extracting and analyzing RNA \textit{in vi
 \par\vspace*{3mm}
  	
 Until then I did not know a lot about the \textit{E. coli }recombination machinery but after my M.Sc., I began working for Jim Sawitzke in EMBL's Genetic Engineering Facility, which evolved into the Genetic and Viral Engineering Facility soon after I started. 
-			%Get more details here, be more sure about what you actually want to say!
+			%Get more details here, be more sure about what you actually want to say! AQUA cloning relies on intrinsic processing mediated by E. coli upon transformation of linear DNA fragments.
 As part of this transition, I not only got to use different recombineering procedures and clonings for CRISPR/Cas9 approaches but also quickly adapted and established new protocols for the production and quantification of viral vector tools in mammalian cell culture. 			
 
 Initially our two person team only provided recombinant AAV, but as my skills progressed, the scope of my portfolio has expanded to include recombinant Lentivirus and we are in the process of adding HSV.
