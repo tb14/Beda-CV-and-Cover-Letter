@@ -74,7 +74,7 @@ Later during my M.Sc. I further used Gibson Assembly and AQUA cloning and also g
 In the process I became familiar with extracting and analyzing RNA \textit{in vitro} and from Synechocystis cultures, documenting pigment content via photometric measurements, producing genetic constructs and recombinant proteins in \textit{E. coli} and eventually  {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{published}}}}} the further characterization of the CRISPR maturation endonuclease Cas6-1.
 		%Rabea: and I didn't publish on the metabolic engineering because it didn't work the way we had it designed, in the end I only published further characterization of the Cas6 protein, not to say that's worth nothing but I cannot write it the way it was
 \par\vspace*{3mm}
- 	
+%Write exactly what kind of recombinnering projects I did, on plasmid/BAC, read up on publications and on their website (https://redrecombineering.ncifcrf.gov/protocols/)
 Until then I did not know a lot about the \textit{E. coli }recombination machinery but after my M.Sc., I began working for Jim Sawitzke in EMBL's Genetic Engineering Facility, which evolved into the Genetic and Viral Engineering Facility soon after I started. 
 			%Get more details here, be more sure about what you actually want to say! AQUA cloning relies on intrinsic processing mediated by E. coli upon transformation of linear DNA fragments.
 As part of this transition, I not only got to use different recombineering procedures and clonings for CRISPR/Cas9 approaches but also quickly adapted and established new protocols for the production and quantification of viral vector tools in mammalian cell culture. 			
