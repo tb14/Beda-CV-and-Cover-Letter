@@ -2,7 +2,7 @@
 %
 % 		Did you:
 %				1) Check for the correct date?
-%				2) Check that the recipeient's name and address were correct?
+%				2) Check that the recipient's name and address were correct?
 %				3) Copy into Word for spelling errors?
 %				4) Use a word counter online to check for overused language?
 
@@ -130,7 +130,7 @@
 \begin{spacing}{1.2}
 \color{dark-gray}{
 Microbes can help us transitioning towards a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
-Through my time at Europe's fagship laboratory for life sciences (EMBL) and my theses I have honed my skills in genetically engineering \textit{E. coli }as well as algae and cyanobacteria. 
+Through my time at Europe's flagship laboratory for life sciences (EMBL) and my theses I have honed my skills in genetically engineering \textit{E. coli }as well as algae and cyanobacteria. 
 My time competing in iGEM meanwhile, has helped me develop an eye for detail and an ability to function both independently and in an interdisciplinary team. 
 These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help engineer the next generation of production strains.}
 % 
@@ -143,7 +143,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 \cvitem{Job Title}{\textbf{Technical Officer}, {\:\href{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}{\textcolor{blue}{\textit{Genetic and Viral Engineering Facility}}}}}
 \cvitem{Achievements}{
 \begin{itemize}  
-		\item {Used oligo recombineering, \textit{in vivo} fragment joining and delition, classical and Gibson cloning to produce high-quality genetic constructs in \textit{E. coli }}
+		\item {Used oligo recombineering, \textit{in vivo} fragment joining and deletion, classical and Gibson cloning to produce high-quality genetic constructs in \textit{E. coli }}
 		\item {Implemented new protocols to produce and quantify viral vector tools (AAV and lentivirus) in aseptic environment}
 		\item {Automated calculations for experimental procedures using FileMaker database and Microsoft Excel}
 		\item {Improved FileMaker database and accurately managed sample data}
@@ -165,7 +165,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 		\item {Assembled all genetic constructs in \textit{E. coli} using Gibson and \textit{in vivo} cloning}
 \end{itemize}}
 %\vspace{3mm}
-\subsection{iGem Competition  }
+\subsection{iGEM Competition  }
 \cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of \textit{in vitro} expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{([2])}}}}{\:\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{(Team Website)}}}}}
 \cvitem{Motivation}{Allow for a cheap and quick pre-test that screens for multiple diseases}
 \cvitem{Achievements}{
@@ -173,7 +173,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 		\item {Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool}
 		\item {Analyzed literature to find a commonly agreed on, high-impact project}
 		\item {Overexpressed and purified proteins from \textit{E. coli} via NiNTA column}
-		\item {Successfully organized ourself as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab}
+		\item {Successfully organized ourselves as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab}
 		\item {Taught myself adobe illustrator and designed most of the explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg/Project/Overview}{\textcolor{blue}{\textit{website}}}}}
 		\item {Accurately recorded and communicated results comprehensively for all team members, to a crowdfunding community and to a jury and fellow students at the final international conference at MIT}
 		\item {Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study [3]}}}}}				
@@ -184,8 +184,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 \vspace{2mm}
 \subsection{B.Sc. Thesis --- Cell Biology}
 \cvitem{Topic}{\emph{\textit{Nannochloropsis oceanica} as an expression system for recombinant proteins and studies on protein transport across the periplastidal membrane of \textit{Phaeodactylum tricornutum}.}}
-%		%Rabea: I didn't really get anywhere on the N. oceanica part, should I still metion it?
-\cvitem{Motivation}{Enlargen molecular toolbox for \textit{P. tricornutum} and explore \textit{N. oceanica} as expression platform for recombinant antibodies}
+\cvitem{Motivation}{Enlarge molecular toolbox for \textit{P. tricornutum} and explore \textit{N. oceanica} as expression platform for recombinant antibodies}
 \cvitem{Achievements}{
 \begin{itemize}  
 		\item {Expressed recombinant single-chain antibody in\textit{ P. tricornutum} to study intracellular protein transport}
