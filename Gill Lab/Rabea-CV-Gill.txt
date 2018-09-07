@@ -190,7 +190,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 \begin{itemize}  
 		\item {Expressed recombinant single-chain antibody in\textit{ P. tricornutum} to study intracellular protein transport}
 		%\item Extracted and analyzed the size of a periplastidal membrane complex from \textit{P. tricornutum} 
-		\item {Assembled genetic constructs in \textit{E. coli} using restricion enzyme based cloning methods}
+		\item {Assembled genetic constructs in \textit{E. coli} using restriction enzyme based cloning methods}
 \end{itemize}}
 %
 % EDUCATION
