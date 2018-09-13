@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%% 		CHECKLIST		%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 		Did you:
+%				1) Check for the correct date?
+%				2) Check that the recipient's name and address were correct?
+%				3) Copy into Word for spelling errors?
+%				4) Use a word counter online to check for overused language?
+
+
+%%%%%%%%%%%%%%%%%%%%%		 DOCUMENT CLASS, PACKAGES, COMMANDS, SOURCING 		%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,sans]{moderncv}
+\usepackage{graphicx, fancyhdr, setspace, verbatim, amsmath, acronym, times, epstopdf, amssymb, mathrsfs, latexsym, wrapfig, url, float, booktabs, microtype, multirow, textcomp, listings, blindtext}
+\usepackage[scale=0.825, top = 1.75cm, bottom = 2.6cm]{geometry}
+\usepackage[font={footnotesize,it}]{caption}  
+\usepackage[english]{babel}\addto\captionsenglish  
+{\renewcommand{\bibname}{References}}  
+\usepackage[backend=bibtex,style=numeric, sorting = ydnt]{biblatex}  %backend=biber is 'better'  
+\usepackage{csquotes} %Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.  
+\usepackage[T1]{fontenc}  
+\usepackage{multicol}
+
+
+\AfterPreamble{\usepackage{cleveref}} %\afterpreamble makes sure packages is only loaded after it does all the document class stuff, there is some sort of package conflict that makes this necessary
+
+\addbibresource{publications-Rabea.bib}  
+
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{% label format from numeric.bbx
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep}%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+
+\definecolor{dark-gray}{gray}{0.20}
+
+% Try to create `triple' list
+\newlength\Tripleitemmaincolumnwidth
+\newlength\tripleitemmaincolumnwidth
+
+\AtBeginDocument{%
+\setlength\tripleitemmaincolumnwidth{% 
+  \maincolumnwidth-2\hintscolumnwidth-2\separatorcolumnwidth}%
+\setlength\tripleitemmaincolumnwidth{.333333\tripleitemmaincolumnwidth}%   
+  }
+
+\newcommand*{\cvtripleitem}[7][.25em]{%
+ \cvitem[#1]{\textbf{#2}}{%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#3}\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#4}}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#5}\end{minipage}%
+   \hfill
+   \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintstyle{\textbf{#6}}\end{minipage}%
+   \hspace*{\separatorcolumnwidth}%
+   \begin{minipage}[t]{\tripleitemmaincolumnwidth}\emph{#7}\end{minipage}%
+   }%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% 		FOOTER, HEADER, MODERNCV INPUTS		 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\moderncvstyle{casual}                             
+\moderncvcolor{blue}                              
+\nopagenumbers{}                          
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+%\fancyhead[R]{\textcolor{gray}{$\sim$ \textbf{Rabea Jesser} $\sim$}}
+\fancypagestyle{titlepage}{
+\fancyhead{}
+\fancyfoot[CE, CO]{\textcolor{gray}{Via Ramarini 32, Monterotondo RM, 00015 \thinspace\thinspace $\bullet$ \thinspace\thinspace\mobilephonesymbol +39~(388)~059~1507 \thinspace\thinspace $\bullet$ \thinspace\thinspace \faSkype \thinspace\thinspace \href{skype:rabea.jesser}{rabea.jesser} \thinspace\thinspace \thinspace\thinspace \emailsymbol \href{mailto:rabeajesser@web.de}{rabeajesser@web.de} \thinspace\thinspace $\bullet$ \thinspace\thinspace \faLinkedin \thinspace\thinspace \href{https://www.linkedin.com/in/rabeajesser/}{https://www.linkedin.com/in/rabeajesser/}}}}
+
+\name{Rabea Jesser ---}{ CV}
+
+
+%%%%%%%%%%%%%%%% 			THOMAS GENERAL NOTES 			%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% Comment like this:
+%				Thomas: Like this!
+
+
+
+\begin{document}
+%
+\thispagestyle{titlepage}
+%
+\renewcommand*{\namefont}{\fontsize{18}{2}\mdseries\upshape}
+\renewcommand*{\sectionfont}{\fontsize{16}{8}\mdseries\upshape}
+\renewcommand*{\subsectionfont}{\fontsize{14}{5}\mdseries\upshape}
+%
+\makecvtitle{}\vspace*{-13mm}
+% water-energy nexus and energy  and resource recovery during waste treatment processes
+%goal of expanding environmental engineering from pollution clean-up to sustainable development of energy and  environmental systems
+%microbial and electrochemical systems to directly convert biodegradable materials, such as wastewater, biomass, and municipal solid waste into energy, fuels,  materials, chemicals and other value-added products
+%molecular microbiology, electrochemistry, and system engineering tools to understand the fundamental determinant  factors of those systems so as to enhance design, operation, and monitoring in concert with traditional approaches.
+
+
+\begin{spacing}{1.2}
+\color{dark-gray}{
+Microbes can help us transition to a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
+Through my time at Europe's flagship laboratory for the life sciences (EMBL) and my theses I have honed my skills in genetically engineering \textit{E. coli }as well as algae and cyanobacteria. 
+My time competing in the scientific contest iGEM meanwhile, has helped me develop an eye for detail and an ability to function both independently and in an interdisciplinary team. 
+These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help convert biodegradable 'waste' to value-added products.}
+% 
+% VOCATIONAL EXPERIENCE
+%
+\vspace{3mm}
+\section{Professional Experience}
+%\vspace{1mm}
+\cvitem{2017--present}{\emph{{\:\href{https://www.embl.it/index.php}{\textcolor{blue}{\textit{European Molecular Biology Laboratory (EMBL)}}}}}, Rome, Italy}
+\cvitem{Job Title}{\textbf{Technical Officer}, {\:\href{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}{\textcolor{blue}{\textit{Genetic and Viral Engineering Facility}}}}}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item {Used oligo recombineering, \textit{in vivo} fragment joining and deletion, classical and Gibson cloning to produce high-quality genetic constructs in \textit{E. coli }}
+		\item {Implemented new protocols to produce and quantify viral vector tools (AAV and lentivirus) in aseptic environment}
+		\item {Automated calculations for experimental procedures using FileMaker database and Microsoft Excel}
+		\item {Improved FileMaker database and accurately managed sample data}
+		\item {Ensured functional laboratory (monitored lab supply, equipment and instruments, prepared stock solutions and media)}
+\end{itemize}}
+\vspace{-6mm}
+%
+% RESEARCH EXPERIENCE
+\vspace{2mm}
+\section{Research Experience}
+\vspace{1mm}
+\subsection{M.Sc. Thesis --- Genetics \& Experimental Bioinformatics}
+\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.} {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{[1]}}}}}}
+\cvitem{Motivation}{Explore applicability of endogenous Synechocystis CRISPR/Cas system in metabolic engineering}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item {Further characterized one of the Synechocystis crRNA maturation enzymes by generating mutant strains via homologous recombination and conjugating them with plasmid DNA}  
+		\item {Analyzed cleavage capability of protein mutants \textit{in vitro} and in culture}
+		\item {Assembled all genetic constructs in \textit{E. coli} using Gibson and \textit{in vivo} cloning}
+\end{itemize}}
+%\vspace{3mm}
+\subsection{iGEM Competition  }
+\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of \textit{in vitro} expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{[2]}}}}{\:\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{(Team Website)}}}}}
+\cvitem{Motivation}{Allow for a cheap and quick pre-test that screens for multiple diseases}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item {Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool}
+		\item {Analyzed literature to find a commonly agreed on, high-impact project}
+		\item {Overexpressed and purified proteins from \textit{E. coli} via NiNTA column}
+		\item {Successfully organized ourselves as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab}
+		\item {Taught myself adobe illustrator and designed most of the explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg/Project/Overview}{\textcolor{blue}{\textit{website}}}}}
+		\item {Accurately recorded and communicated results comprehensively for all team members, to a crowdfunding community and to a jury at the final international conference at MIT}
+		\item {Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study [3]}}}}}				
+\end{itemize}
+}
+\vspace{-5mm}
+\cvitem{Awards}{Gold medal; nominated for Best Health and Medicine Project, Best Innovation in Medicine and Best Wiki.}
+\vspace{2mm}
+\subsection{B.Sc. Thesis --- Cell Biology}
+\cvitem{Topic}{\emph{\textit{Nannochloropsis oceanica} as an expression system for recombinant proteins and studies on protein transport across the periplastidal membrane of \textit{Phaeodactylum tricornutum}.}}
+\cvitem{Motivation}{Enlarge molecular toolbox for \textit{P. tricornutum} and explore \textit{N. oceanica} as expression platform for recombinant antibodies}
+\cvitem{Achievements}{
+\begin{itemize}  
+		\item {Expressed recombinant single-chain antibody in\textit{ P. tricornutum} to study intracellular protein transport}
+		%\item Extracted and analyzed the size of a periplastidal membrane complex from \textit{P. tricornutum} 
+		\item {Assembled genetic constructs in \textit{E. coli} using restriction enzyme based cloning methods}
+\end{itemize}}
+%
+% EDUCATION
+\thispagestyle{titlepage}
+\vspace{-5mm}
+\section{Education}
+\cventry{2014--2016}{M.Sc. Biology}{\href{http://www.bio.uni-freiburg.de/studies/degree-programs/master-en/translational_biology}{\textcolor{blue}{Albert-Ludwigs-Universit\"at Freiburg}}}{Germany}{\textit{GPA 4.0}}{}
+\cventry{2011--2014}{B.Sc. Biology}{\href{ https://www.uni-marburg.de/fb17/index_html-en?set_language=en?}{\textcolor{blue}{Philipps-Universit\"at Marburg}}}{Germany}{\textit{GPA 4.0}}{}
+%
+% LANGUAGES
+\vspace{3mm}
+\section{Languages}
+\cvtripleitem{German:}{Native}{English:}{Fluent}{Italian:}{Fluent}
+%
+% COMPUTER SKILLS
+%
+\section{Computer Skills}
+\cvitemwithcomment{Office}{Microsoft Excel, Word, PowerPoint}{very proficient}
+\cvitemwithcomment{Biology}{Geneious, SnapGene}{very proficient}
+\cvitemwithcomment{Other}{Adobe Illustrator, FileMaker database, \LaTeX, GitKraken}{basic}{}
+%
+
+%\section{Volunteering}
+%\cvitem{}{Community garden at EMBL, organized summer camp for 36 young women with 11 co-workers}
+%
+%
+% PUBLICATIONS 
+%
+
+\nocite{Article2,Article3,Article1}
+\printbibliography[title={Publications}]
+%
+% REFERENCES
+%
+\section{References}
+\cvitem{EMBL}{\textbf{Dr. James Sawitzke:} \emph{Head of Genetic and Viral Engineering Facility, EMBL Rome --- Italy} \emailsymbol \href{mailto:james.sawitzke@embl.it}{james.sawitzke@embl.it} \thinspace \phonesymbol +39 06 90091 268 \thinspace \homepagesymbol\textcolor{blue}{\url{https://www.embl.it/services/genetic-and-viral-engineering-facility/index.html}}}
+\cvitem{M.Sc. Thesis}{\textbf{Dr. Wolfgang Hess:} \emph{Professor for Genetics \& Experimental Bioinformatics, University Freiburg  --- Germany} \emailsymbol \href{mailto:wolfgang.hess@biologie.uni-freiburg.de}{wolfgang.hess@biologie.uni-freiburg.de} \thinspace \phonesymbol +49 761 203-2796 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.cyanolab.de/}}}
+\cvitem{iGem}{\textbf{Dr. Maximilian Ulbrich:} \emph{Group leader at Centre for Biological Signalling Studies (BIOSS), University Freiburg --- Germany} \emailsymbol \href{mailtp:max.ulbrich@bioss.uni-freiburg.de}{ max.ulbrich@bioss.uni-freiburg.de} \thinspace \phonesymbol +49 761 203 97183 \thinspace \homepagesymbol\textcolor{blue}{\url{http://www.ulbrich-lab.com/}}}
+\cvitem{iGem}{\textbf{Dr. Nicole Gensch:} \emph{Laboratory manager of the Toolbox, BIOSS, University Freiburg --- Germany} \emailsymbol nicole.gensch@bioss.uni-freiburg.de \thinspace \phonesymbol +49 761 203 97225  \thinspace \homepagesymbol \textcolor{blue}{\url{http://www.bioss.uni-freiburg.de/de/toolbox/toolbox-home/}}}
+
+\end{spacing}
+\thispagestyle{titlepage}
+\end{document}
