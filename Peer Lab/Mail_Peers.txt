@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Peers lab}
+%\author{rabeajesser }
+%\date{September 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{New opportunities on their homepage}
+We have recently received two grants from the Department of Energy.
+The first grant will permit us to\textbf{ investigate and manipulate the photophysiology} of \textbf{Desmodesmus} in mass culture. This is a 3 year project funded by Bioenergy Technologies Office. \par\vspace{2mm}
+The second grant is to continue our work on the marine diatom \textbf{Phaeodactylum}. This will entail \textbf{gene discovery efforts to uncover new players in photosynthetic acclimation and efficiency}.\par\vspace{2mm}
+We also will work on \textbf{biocontainment} tools to prevent the spread of GMO algae. This work is supported by Biological and Environmental Research Program for 5 years.\vspace{2mm}
+
+If either of these projects appear interesting to you, then please reach out to Graham (graham.peers@colostate.edu) with your CV and a summary of your research interests and accomplishments.\par
+
+\section{First draft email}
+Dear Dr. Peers,\par\vspace{5mm}
+ 
+
+On your lab's homepage I saw that you were looking to fill positions at the molecular biology technician level. Since the entry seems to be from November 2017 I  would like to inquire as to whether this is still going on? I already have some experience in engineering and analyzing Synechocystis sp. PCC 6803, \textit{Phaeodactylum tricornutum} and \textit{Nannochloropsis} and I would be thrilled to come back to studying photosynthetic organisms. Please find attached my CV with a summary of my research interests and accomplishments.\par\vspace{5mm}
+
+
+As a brief background: For my B.Sc. thesis in Biology at the University of Marburg, Germany, I worked with \textit{P. tricornutum} and \textit{N. oceanica} before continuing to study Synechocystis for my M.Sc. thesis in Biology at the University of Freiburg, Germany. During my M.Sc. I also participated in a team to develop an affordable diagnostic tool for the international Genetically Engineered Machine (iGEM) competition. After my M.Sc. I joined Europe's flagship laboratory for the life sciences (EMBL) in Rome, Italy, where I work as a Technical Officer in the Genetic and Viral Engineering Facility.\par\vspace{5mm}
+
+
+Thank you very much for your time and consideration, I look forward to hearing from you soon and will be following up next week to see if you have any questions concerning my qualifications.\par\vspace{5mm}
+ 
+
+Sincerely,\par\vspace{5mm}
+
+Rabea Jesser  
+
+\end{document}

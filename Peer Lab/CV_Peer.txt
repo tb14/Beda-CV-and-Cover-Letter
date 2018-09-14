@@ -112,10 +112,10 @@
 
 \begin{spacing}{1.2}
 \color{dark-gray}{
-Microbes can help us transition to a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
+Photosynthetic organisms can help us transition to a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
 Through my time at Europe's flagship laboratory for the life sciences (EMBL) and my theses I have honed my skills in genetically engineering \textit{E. coli }as well as algae and cyanobacteria. 
 My time competing in the scientific contest iGEM meanwhile, has helped me develop an eye for detail and an ability to function both independently and in an interdisciplinary team. 
-These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help convert biodegradable 'waste' to value-added products.}
+These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help increase our understanding of photosynthesis.}
 % 
 % VOCATIONAL EXPERIENCE
 %
