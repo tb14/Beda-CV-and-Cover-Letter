@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Ren lab}
+\date{Water Resource Recovery Lab in Environmental Engineering}
+
+\begin{document}
+
+\maketitle
+
+\section{Their focus}
+water-energy nexus and energy  and resource recovery during waste treatment processes\\
+goal of expanding environmental engineering from pollution clean-up to sustainable development of energy and  environmental systems\\
+microbial and electrochemical systems to directly convert biodegradable materials, such as wastewater, biomass, and municipal solid waste into energy, fuels,  materials, chemicals and other value-added products\\
+molecular microbiology, electrochemistry, and system engineering tools to understand the fundamental determinant  factors of those systems so as to enhance design, operation, and monitoring in concert with traditional approaches\\
+\vspace{2mm}
+
+\textbf{Environmental Biotechnology}
+
+    Carbon-negative, energy-positive wastewater treatment and reuse\\
+    Environmental remediation of petroleum hydrocarbons and\\ chlorinated solvents\\
+    Sustainable water infrastructure\\
+    Microbial and electrochemical carbon capture, utilization, and storage\\
+
+\textbf{Bioenergy, Biofuels, and Bioproducts Generation from Biomass and Wastewater}
+
+    Microbial electrochemical technology (MET) (bioelectrochemical system or MXCs, microbial fuel cell, microbial electrolysis cell, microbial desalination cell, microbial electrosynthesis)\\
+    Fermentation, anaerobic digestion, and other bioenergy systems for hydrogen, biogas, drop-in fuels, and value-added chemicals production\\
+    Anaerobic membrane bioreactor (AnMBR), electrochemical membrane bioreactor (EMBR)\\
+
+\textbf{Water Desalination Systems}
+
+    Capacitive deionization and membranes\\
+    Oil and gas flow back water and produced water management\\
+    Seawater and groundwater desalination\\
+
+
+\par
+
+\section{First draft email}
+
+I have never done anything with microbial fuel cells or anything like that so I am not sure how equipped I am, but maybe still worth a try?
+
+Dear Dr. Ren,\par\vspace{5mm}
+ 
+
+After a friend, Oliver Miltenberger, mentioned your work, I visited your homepage and found your work very appealing. Given my hands-on experience in molecular microbiology, I hope to make a contribution to bringing environmental engineering to the next stage. Please find attached my CV with a summary of my research interests and accomplishments.\par\vspace{5mm}
+
+
+As a brief background: For my B.Sc. thesis in Biology at the University of Marburg, Germany, I worked with \textit{P. tricornutum} and \textit{N. oceanica} before continuing to study Synechocystis for my M.Sc. thesis in Biology at the University of Freiburg, Germany. During my M.Sc. I also participated in a team to develop an affordable diagnostic tool for the international Genetically Engineered Machine (iGEM) competition. After my M.Sc. I joined Europe's flagship laboratory for the life sciences (EMBL) in Rome, Italy, where I work as a Technical Officer in the Genetic and Viral Engineering Facility.\par\vspace{5mm}
+
+
+Thank you very much for your time and consideration, I look forward to hearing from you soon and will be following up next week to see if you have any questions concerning my qualifications.\par\vspace{5mm}
+ 
+
+Sincerely,\par\vspace{5mm}
+
+Rabea Jesser  
+
+\end{document}
