@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref, setspace}
+\usepackage{color}
+
+\title{Boyle lab}
+\vspace{-20mm}
+
+\begin{document}
+\vspace{-20mm}
+\begin{spacing}{1.5}
+\maketitle
+
+\section{Their focus}
+{\href{http://www.minesnewsroom.com/news/boyle-selected-doe-early-career-research-program}{\textcolor{blue}{{\textit{news release about funding}}}}}\\
+{\href{https://chemeng.mines.edu/project/boyle-nanette/}{\textcolor{blue}{{\textit{info on colorado school of mines homepage}}}}}\\
+genome engineering approaches (synthetic biology, systems biology, and metabolic engineering) to design photosynthetic organisms capable of producing fuels, feedstocks, and fine chemicals in a sustainable way.\\
+ i) developing larger and more sophisticated \textbf{molecular toolkits} for \textbf{cyanobacteria} and optimizing those tools to ensure \textbf{high recombineering efficiencies}\\
+ ii) using \textbf{genome-wide engineering techniques} to identify genes which increase performance of cyanobacteria under stress conditions (salt, nutrient limitation, high/low light, etc)\\
+ iii) designing \textbf{production strains }capable of using CO2 and sunlight to produce molecules of interest.\\
+Her words: Solar power, as the main source of energy on Earth, is the \textbf{logical first step} in the search for alternative energies. Photosynthetic organisms, such as cyanobacteria, algae and plants, have evolved over thousands of years to efficiently harvest solar energy and use that energy to convert carbon dioxide into complex molecules (starch, proteins, lipids, secondary metabolites, etc). With \textbf{advances in synthetic biology and metabolic engineering}, we now have the ability to \textbf{direct carbon flux} to metabolites that can serve as fuels, feedstocks and fine chemicals.\par
+
+\section{First draft email}
+Dear Dr. Boyle,\par\vspace{5mm}
+ 
+
+Having heard about your work on establishing metabolic models of \textit{Chromochloris zofingiensis} and your efforts in advancing engineering tools for algae and cyanobacteria, I hope to contribute with my experience in recombineering, my applied knowledge about CRISPR/Cas systems and my strong work ethic and adaptive capacity. Therefore I would like to inquire as to whether you are or will be looking for a research technician/assistant or something similar in the near future?
+\par\vspace{5mm}
+
+
+As a brief background: For my B.Sc. thesis in Biology at the University of Marburg, Germany, I worked with \textit{P. tricornutum} and \textit{N. oceanica} before continuing to study Synechocystis sp. PCC6803 for my M.Sc. thesis in Biology at the University of Freiburg, Germany. During my M.Sc. I also participated in a team to develop an affordable diagnostic tool for the international Genetically Engineered Machine (iGEM) competition. After my M.Sc. I joined Europe's flagship laboratory for the life sciences (EMBL) in Rome, Italy, where I work as a Technical Officer in the Genetic and Viral Engineering Facility.\par\vspace{5mm}
+
+
+Please find attached my CV with a summary of my research interests and accomplishments, I am happy to send a cover letter with more information upon request. Thank you very much for your time and consideration, I look forward to hearing from you soon and will be following up next week to see if you have any questions concerning my qualifications.\par\vspace{5mm}
+ 
+
+Sincerely,\par\vspace{5mm}
+
+Rabea Jesser  
+\end{spacing}{}
+\end{document}
