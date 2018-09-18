@@ -107,10 +107,10 @@
 
 \begin{spacing}{1.2}
 \color{dark-gray}{
-Microbes can help us transition to a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
+Photosynthetic organisms can help us transition to a sustainable economy and as a dedicated researcher with a strong practical and theoretical background, I am well equipped to work towards making this a reality. 
 Through my time at Europe's flagship laboratory for the life sciences (EMBL) and my theses I have honed my skills in genetically engineering \textit{E. coli }as well as algae and cyanobacteria. 
 My time competing in the scientific contest iGEM meanwhile, has helped me develop an eye for detail and an ability to function both independently and in an interdisciplinary team. 
-These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help enlarge the molecular toolkit for algae and cyanobacteria and engineer the new production strains.}
+These skills combined with a strong work ethic and a passion for sustainability would make me an excellent candidate to help enlarge the molecular toolkit for algae and cyanobacteria and engineer new production strains.}
 % 
 % VOCATIONAL EXPERIENCE
 %
@@ -134,7 +134,7 @@ These skills combined with a strong work ethic and a passion for sustainability 
 \section{Research Experience}
 \vspace{0.5mm}
 \subsection{M.Sc. Thesis --- Genetics \& Experimental Bioinformatics}
-\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.} {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{[1]}}}}}}
+\cvitem{Topic}{\emph{Biochemical analysis of the Cas6-1 RNA endonuclease associated with the subtype I-D CRISPR-Cas system in Synechocystis sp. PCC 6803.} {\href{https://www.tandfonline.com/eprint/vmAQ3vjYGdZIZpIKQTIT/full}{\textcolor{blue}{{\textit{[2]}}}}}}
 \cvitem{Motivation}{Explore applicability of endogenous Synechocystis CRISPR/Cas system in metabolic engineering}
 \cvitem{Achievements}{
 \begin{itemize}  
@@ -143,18 +143,18 @@ These skills combined with a strong work ethic and a passion for sustainability 
 		\item {Assembled all genetic constructs in \textit{E. coli} using Gibson and \textit{in vivo} cloning}
 \end{itemize}}
 %\vspace{3mm}
-\subsection{iGEM Competition  }
-\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of \textit{in vitro} expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{[2]}}}}{\:\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{(Team Website)}}}}}
+\subsection{iGEM Competition}
+\cvitem{Topic}{\emph{Multiplexed antibody detection from blood sera by immobilization of \textit{in vitro} expressed antigens and label-free readout via imaging reflectometric interferometry (iRIf).}{\:\href{https://www.ncbi.nlm.nih.gov/pubmed/29803867}{\textcolor{blue}{\textit{[1]}}}}{\:\href{http://2015.igem.org/Team:Freiburg/Home_Intro}{\textcolor{blue}{\textit{(Team Website)}}}}}
 \cvitem{Motivation}{Allow for a cheap and quick pre-test that screens for multiple diseases}
 \cvitem{Achievements}{
 \begin{itemize}  
 		\item {Developed a prototype for multiplexed, microfluidics-based, label-free diagnostic tool}
-		\item {Analyzed literature to find a commonly agreed on, high-impact project}
-		\item {Overexpressed and purified proteins from \textit{E. coli} via NiNTA column}
-		\item {Successfully organized ourselves as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab}
-		\item {Taught myself adobe illustrator and designed most of the explanatory illustrations for the  {\:\href{http://2015.igem.org/Team:Freiburg/Project/Overview}{\textcolor{blue}{\textit{website}}}}}
+		\item {Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study [3]}}}}}
+		\item {Provided overexpressed and purified proteins from \textit{E. coli} for initial tests}
 		\item {Accurately recorded and communicated results comprehensively for all team members, to a crowdfunding community and to a jury at the final international conference at MIT}
-		\item {Contributed to{\:\href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4777433/pdf/pone.0150182.pdf}{\textcolor{blue}{\textit{interlab study [3]}}}}}				
+		\item {Taught myself adobe illustrator and designed most of the explanatory illustrations for the {\:\href{http://2015.igem.org/Team:Freiburg/Project/Overview}{\textcolor{blue}{\textit{website}}}}}
+		\item {Successfully organized ourselves as an interdisciplinary team to ensure availability of sufficient funding and reagents and a functional lab}
+		\item {Analyzed literature to find a commonly agreed on, high-impact project}
 \end{itemize}
 }
 \vspace{-5mm}
@@ -197,7 +197,9 @@ These skills combined with a strong work ethic and a passion for sustainability 
 % PUBLICATIONS 
 %
 
-\nocite{Article2,Article3,Article1}
+\nocite{Article1}
+\nocite{Article2}
+\nocite{Article3}
 \printbibliography[title={Publications}]
 %
 % REFERENCES
