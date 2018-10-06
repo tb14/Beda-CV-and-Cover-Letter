@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref, setspace}
+\usepackage{color}
+
+\title{Boyle lab}
+\vspace{-20mm}
+
+\begin{document}
+\vspace{-20mm}
+\begin{spacing}{1.5}
+\maketitle
+
+\section{Their focus}
+{\href{http://www.minesnewsroom.com/news/boyle-selected-doe-early-career-research-program}{\textcolor{blue}{{\textit{news release about funding}}}}}\\
+{\href{http://algae.mines.edu/ALG-overview/}{\textcolor{blue}{{\textit{lab homepage}}}}}\\
+
+Research Areas
+
+Energy is inextricably linked to a society’s standard of living and the \textbf{21st century} will see dramatic changes in how energy is generated, distributed and utilized. It is clear that diminishing fossil energy resources, climate change concerns, and growing energy demands will require \textbf{cutting edge solutions }in renewable energy technologies. Our group studies the diverse portfolio of bioenergy carriers that can be obtained from \textbf{algae} including\textbf{ hydrogen, lipids for transformation into diesel fuel surrogates, and starch and osmolytes for conversion into alcohols, lipids or hydrogen}. Micro-algae have among the\textbf{ highest photosynthetic conversion efficiencies} documented, are able to \textbf{thrive in salt water,} and are among the most \textbf{metabolically versatile organism}s known.\\
+Currently, laboratory projects include the study of \\
+(a)\textbf{ hydrogenase enzymes} and the production of hydrogen from phototrophic micro-organisms,\\
+(b) \textbf{starch and lipid metabolisms} in algae, \\
+(c) \textbf{‘omics’ based approaches} applied to defining whole cell metabolic and regulatory pathways, \\
+(d) the \textbf{diversity} of water-oxidizing phototrophs that are adapted to saline ecosystems, and \\
+(e) the \textbf{enzymatic control of metabolic flux} in algae. \\
+Our research is firmly entrenched in developing a \textbf{more informed understanding of central metabolism }in these fascinating organisms, which can hopefully be applied in\textbf{ viable bioenergy technologies}.
+\par
+
+\section{First draft email}
+Dear Dr. Posewitz,\par\vspace{5mm}
+ 
+
+Having heard about your efforts to unravel the metabolism of phototrophic mircroorganisms, I hope to contribute with my experience in engineering and analyzing algae and cyanobacteria in an aseptic environment, my project management skills and my ability to work both independently and as part of a team. Therefore I would like to inquire as to whether you are or will be looking for a research technician/assistant or something similar in the near future?
+\par\vspace{5mm}
+
+
+As a brief background: For my B.Sc. thesis in Biology at the University of Marburg, Germany, I worked with \textit{P. tricornutum} and \textit{N. oceanica} before continuing to study Synechocystis sp. PCC6803 for my M.Sc. thesis in Biology at the University of Freiburg, Germany. During my M.Sc. I also participated in a team to develop an affordable diagnostic tool for the international Genetically Engineered Machine (iGEM) competition. After my M.Sc. I joined Europe's flagship laboratory for the life sciences (EMBL) in Rome, Italy, where I work as a Technical Officer in the Genetic and Viral Engineering Facility.\par\vspace{5mm}
+
+
+Please find attached my CV with a summary of my research interests and accomplishments, I am happy to send a cover letter with more information upon request. Thank you very much for your time and consideration, I look forward to hearing from you soon and will be following up next week to see if you have any questions concerning my qualifications.\par\vspace{5mm}
+ 
+
+Sincerely,\par\vspace{5mm}
+
+Rabea Jesser  
+\end{spacing}{}
+\end{document}
